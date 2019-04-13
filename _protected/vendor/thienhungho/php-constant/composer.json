@@ -1,0 +1,17 @@
+{
+    "name": "thienhungho/php-constant",
+    "description": "PHP Constant",
+    "type": "php-extension",
+    "keywords": ["php","extension","constant"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "thienhungho",
+            "email": "thienhungho@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "files": ["src/constant.php"]
+    }
+}

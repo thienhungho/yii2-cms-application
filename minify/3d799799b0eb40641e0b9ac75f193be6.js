@@ -1,0 +1,3 @@
+var lajax=(function(){return{t:function(message,$params){if(typeof(languageItems)!=='undefined'&&typeof(languageItems.getLanguageItems)==='function'){var $messages=languageItems.getLanguageItems();if(typeof($messages)!=='undefined'){var hash=hex_md5(message);if(typeof($messages[hash])!=='undefined'){message=$messages[hash];}}}
+if(typeof($params)!=='undefined'){for(search in $params){message=message.replace('{'+search+'}',$params[search]);}}
+return message;}};})();;

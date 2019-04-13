@@ -1,0 +1,56 @@
+{
+  "name": "yiisoft/yii2-app-advanced",
+  "description": "Yii 2 Advanced Project Template",
+  "keywords": [
+    "yii2",
+    "framework",
+    "advanced",
+    "project template"
+  ],
+  "homepage": "http://www.yiiframework.com/",
+  "type": "project",
+  "license": "BSD-3-Clause",
+  "support": {
+    "issues": "https://github.com/yiisoft/yii2/issues?state=open",
+    "forum": "http://www.yiiframework.com/forum/",
+    "wiki": "http://www.yiiframework.com/wiki/",
+    "irc": "irc://irc.freenode.net/yii",
+    "source": "https://github.com/yiisoft/yii2"
+  },
+  "minimum-stability": "stable",
+  "require": {
+    "thienhungho/yii2-app-core": "*",
+    "thienhungho/yii2-block-management": "*",
+    "thienhungho/yii2-hrm": "*",
+    "thienhungho/yii2-contact-management": "*",
+    "thienhungho/yii2-favorites": "*",
+    "thienhungho/yii2-subscribe-management": "*",
+    "thienhungho/yii2-term-management": "*",
+    "thienhungho/yii2-comment-management": "*",
+    "thienhungho/yii2-cms": "*",
+    "thienhungho/yii2-wms": "*",
+    "thienhungho/yii2-theme-1001": "*",
+    "thienhungho/yii2-theme-1002": "*",
+    "thienhungho/yii2-ecommerce": "*",
+    "thienhungho/yii2-configuration": "*"
+  },
+  "require-dev": {
+    "yiisoft/yii2-debug": "~2.0.0",
+    "yiisoft/yii2-gii": "~2.0.0",
+    "yiisoft/yii2-faker": "~2.0.0",
+    "codeception/base": "^2.2.3",
+    "codeception/verify": "~0.3.1"
+  },
+  "config": {
+    "process-timeout": 1800,
+    "fxp-asset": {
+      "enabled": false
+    }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ]
+}

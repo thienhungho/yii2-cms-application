@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="25246078-01a6-45a4-817e-8e838a472eab" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLinters/jshint.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/_protected/composer.json</pharConfigPath>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_protected/composer.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_db.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_protected/backend/views/layouts/main.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_protected/backend/views/layouts/component/page-sidebar.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="219">
+              <caret line="25" column="56" selection-start-line="25" selection-start-column="56" selection-end-line="25" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="319">
+              <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_protected/common/config/view.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_protected/frontend/config/main.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/basic/views/layouts/main.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-996" />
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>ci</find>
+    </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/_db.php" />
+        <option value="$PROJECT_DIR$/_protected/backend/views/layouts/component/page-sidebar.php" />
+        <option value="$PROJECT_DIR$/_protected/frontend/config/main.php" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/_protected/vendor/thienhungho/yii2-helper-functions" />
+      <path value="$PROJECT_DIR$/_protected/vendor/ezyang/htmlpurifier" />
+      <path value="$PROJECT_DIR$/_protected/vendor/kartik-v/yii2-grid" />
+      <path value="$PROJECT_DIR$/_protected/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/_protected/vendor/bower-asset/store.js" />
+      <path value="$PROJECT_DIR$/_protected/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/_protected/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/_protected/vendor/container-interop/container-interop" />
+      <path value="$PROJECT_DIR$/_protected/vendor/thienhungho/yii2-hrm" />
+      <path value="$PROJECT_DIR$/_protected/vendor/kartik-v/yii2-sortable" />
+      <path value="$PROJECT_DIR$/_protected/vendor/kartik-v/yii2-widget-datepicker" />
+      <path value="$PROJECT_DIR$/_protected/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/_protected/vendor/thienhungho/yii2-mail" />
+      <path value="$PROJECT_DIR$/_protected/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/_protected/vendor/thienhungho/yii2-supplier-management" />
+      <path value="$PROJECT_DIR$/_protected/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/_protected/vendor/rmrevin/yii2-fontawesome" />
+      <path value="$PROJECT_DIR$/_protected/vendor/rmrevin/yii2-minify-view" />
+      <path value="$PROJECT_DIR$/_protected/vendor/thienhungho/yii2-cms" />
+      <path value="$PROJECT_DIR$/_protected/vendor/cinghie/yii2-multilanguage" />
+      <path value="$PROJECT_DIR$/_protected/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/_protected/vendor/setasign/fpdi" />
+      <path value="$PROJECT_DIR$/_protected/vendor/thienhungho/yii2-comment-management" />
+      <path value="$PROJECT_DIR$/_protected/vendor/kartik-v/yii2-widget-affix" />
+      <path value="$PROJECT_DIR$/_protected/vendor/thienhungho/yii2-product-management" />
+      <path value="$PROJECT_DIR$/_protected/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/_protected/vendor/cebe/markdown" />
+      <path value="$PROJECT_DIR$/_protected/vendor/kartik-v/yii2-datecontrol" />
+      <path value="$PROJECT_DIR$/_protected/vendor/bower-asset/codemirror" />
+      <path value="$PROJECT_DIR$/_protected/vendor/creocoder/yii2-nested-sets" />
+      <path value="$PROJECT_DIR$/_protected/vendor/kartik-v/bootstrap-tabs-x" />
+      <path value="$PROJECT_DIR$/_protected/vendor/thienhungho/yii2-template-configuration" />
+      <path value="$PROJECT_DIR$/_protected/vendor/codeception/stub" />
+      <path value="$PROJECT_DIR$/_protected/vendor/thienhungho/yii2-widgets" />
+      <path value="$PROJECT_DIR$/_protected/vendor/kartik-v/yii2-widget-alert" />
+      <path value="$PROJECT_DIR$/_protected/vendor/kartik-v/yii2-helpers" />
+      <path value="$PROJECT_DIR$/_protected/vendor/kartik-v/yii2-tabs-x" />
+      <path value="$PROJECT_DIR$/_protected/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/_protected/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/_protected/vendor/thienhungho/yii2-wms" />
+      <path value="$PROJECT_DIR$/_protected/vendor/thienhungho/yii2-configuration" />
+      <path value="$PROJECT_DIR$/_protected/vendor/thienhungho/yii2-media-management" />
+      <path value="$PROJECT_DIR$/_protected/vendor/bower-asset/inputmask" />
+      <path value="$PROJECT_DIR$/_protected/vendor/thienhungho/yii2-contact-management" />
+      <path value="$PROJECT_DIR$/_protected/vendor/thienhungho/yii2-term-management" />
+      <path value="$PROJECT_DIR$/_protected/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/_protected/vendor/markbaker/complex" />
+      <path value="$PROJECT_DIR$/_protected/vendor/thienhungho/yii2-theme-1002" />
+      <path value="$PROJECT_DIR$/_protected/vendor/bower-asset/jquery.floatthead" />
+      <path value="$PROJECT_DIR$/_protected/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/_protected/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/_protected/vendor/bower-asset/yii2-pjax" />
+      <path value="$PROJECT_DIR$/_protected/vendor/mrclay/minify" />
+      <path value="$PROJECT_DIR$/_protected/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/_protected/vendor/mrclay/jsmin-php" />
+      <path value="$PROJECT_DIR$/_protected/vendor/2amigos/yii2-arrayquery-component" />
+      <path value="$PROJECT_DIR$/_protected/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/_protected/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/_protected/vendor/kartik-v/dependent-dropdown" />
+      <path value="$PROJECT_DIR$/_protected/vendor/mrclay/props-dic" />
+      <path value="$PROJECT_DIR$/_protected/vendor/phpoffice/phpspreadsheet" />
+      <path value="$PROJECT_DIR$/_protected/vendor/froala/wysiwyg-editor" />
+      <path value="$PROJECT_DIR$/_protected/vendor/kartik-v/yii2-widget-colorinput" />
+      <path value="$PROJECT_DIR$/_protected/vendor/froala/yii2-froala-editor" />
+      <path value="$PROJECT_DIR$/_protected/vendor/thienhungho/yii2-user-management" />
+      <path value="$PROJECT_DIR$/_protected/vendor/phpspec/php-diff" />
+      <path value="$PROJECT_DIR$/_protected/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/_protected/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/_protected/vendor/bower-asset/summernote" />
+      <path value="$PROJECT_DIR$/_protected/vendor/himiklab/yii2-recaptcha-widget" />
+      <path value="$PROJECT_DIR$/_protected/vendor/thienhungho/yii2-order-management" />
+      <path value="$PROJECT_DIR$/_protected/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/_protected/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/_protected/vendor/kartik-v/bootstrap-star-rating" />
+      <path value="$PROJECT_DIR$/_protected/vendor/kartik-v/yii2-tree-manager" />
+      <path value="$PROJECT_DIR$/_protected/vendor/markbaker/matrix" />
+      <path value="$PROJECT_DIR$/_protected/vendor/codeception/verify" />
+      <path value="$PROJECT_DIR$/_protected/vendor/bower-asset/jquery" />
+      <path value="$PROJECT_DIR$/_protected/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/_protected/vendor/yiisoft/yii2-debug" />
+      <path value="$PROJECT_DIR$/_protected/vendor/yiisoft/yii2-jui" />
+      <path value="$PROJECT_DIR$/_protected/vendor/kartik-v/yii2-mpdf" />
+      <path value="$PROJECT_DIR$/_protected/vendor/yiisoft/yii2-authclient" />
+      <path value="$PROJECT_DIR$/_protected/vendor/yiisoft/yii2-queue" />
+      <path value="$PROJECT_DIR$/_protected/vendor/yiisoft/yii2-gii" />
+      <path value="$PROJECT_DIR$/_protected/vendor/kartik-v/php-date-formatter" />
+      <path value="$PROJECT_DIR$/_protected/vendor/yiisoft/yii2-imagine" />
+      <path value="$PROJECT_DIR$/_protected/vendor/yiisoft/yii2-composer" />
+      <path value="$PROJECT_DIR$/_protected/vendor/yiisoft/yii2-httpclient" />
+      <path value="$PROJECT_DIR$/_protected/vendor/yiisoft/yii2-bootstrap" />
+      <path value="$PROJECT_DIR$/_protected/vendor/thienhungho/yii2-theme-1001" />
+      <path value="$PROJECT_DIR$/_protected/vendor/yiisoft/yii2-faker" />
+      <path value="$PROJECT_DIR$/_protected/vendor/bower-asset/jquery-ui" />
+      <path value="$PROJECT_DIR$/_protected/vendor/yiisoft/yii2-swiftmailer" />
+      <path value="$PROJECT_DIR$/_protected/vendor/intervention/httpauth" />
+      <path value="$PROJECT_DIR$/_protected/vendor/yii2mod/yii2-editable" />
+      <path value="$PROJECT_DIR$/_protected/vendor/bower-asset/punycode" />
+      <path value="$PROJECT_DIR$/_protected/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/_protected/vendor/yii2mod/yii2-enum" />
+      <path value="$PROJECT_DIR$/_protected/vendor/bower-asset/typeahead.js" />
+      <path value="$PROJECT_DIR$/_protected/vendor/yii2mod/yii2-settings" />
+      <path value="$PROJECT_DIR$/_protected/vendor/yii2mod/yii2-rbac" />
+      <path value="$PROJECT_DIR$/_protected/vendor/yii2mod/collection" />
+      <path value="$PROJECT_DIR$/_protected/vendor/yii2mod/yii2-helpers" />
+      <path value="$PROJECT_DIR$/_protected/vendor/kartik-v/yii2-widget-datetimepicker" />
+      <path value="$PROJECT_DIR$/_protected/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/_protected/vendor/kartik-v/yii2-number" />
+      <path value="$PROJECT_DIR$/_protected/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/_protected/vendor/composer" />
+      <path value="$PROJECT_DIR$/_protected/vendor/mootensai/yii2-enhanced-gii" />
+      <path value="$PROJECT_DIR$/_protected/vendor/codeception/phpunit-wrapper" />
+      <path value="$PROJECT_DIR$/_protected/vendor/codemix/yii2-localeurls" />
+      <path value="$PROJECT_DIR$/_protected/vendor/bower-asset/x-editable" />
+      <path value="$PROJECT_DIR$/_protected/vendor/kartik-v/yii2-export" />
+      <path value="$PROJECT_DIR$/_protected/vendor/mpdf/mpdf" />
+      <path value="$PROJECT_DIR$/_protected/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/_protected/vendor/thienhungho/yii2-ecommerce" />
+      <path value="$PROJECT_DIR$/_protected/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/_protected/vendor/kartik-v/yii2-widget-depdrop" />
+      <path value="$PROJECT_DIR$/_protected/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/_protected/vendor/kartik-v/yii2-widget-spinner" />
+      <path value="$PROJECT_DIR$/_protected/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/_protected/vendor/kartik-v/yii2-widget-select2" />
+      <path value="$PROJECT_DIR$/_protected/vendor/kartik-v/yii2-widget-switchinput" />
+      <path value="$PROJECT_DIR$/_protected/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/_protected/vendor/kartik-v/yii2-widget-sidenav" />
+      <path value="$PROJECT_DIR$/_protected/vendor/symfony/contracts" />
+      <path value="$PROJECT_DIR$/_protected/vendor/kartik-v/yii2-widget-touchspin" />
+      <path value="$PROJECT_DIR$/_protected/vendor/thienhungho/php-constant" />
+      <path value="$PROJECT_DIR$/_protected/vendor/kartik-v/yii2-widgets" />
+      <path value="$PROJECT_DIR$/_protected/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/_protected/vendor/kartik-v/yii2-widget-fileinput" />
+      <path value="$PROJECT_DIR$/_protected/vendor/thienhungho/yii2-employee-management" />
+      <path value="$PROJECT_DIR$/_protected/vendor/symfony/browser-kit" />
+      <path value="$PROJECT_DIR$/_protected/vendor/yiisoft/yii2" />
+      <path value="$PROJECT_DIR$/_protected/vendor/kartik-v/yii2-widget-growl" />
+      <path value="$PROJECT_DIR$/_protected/vendor/2amigos/yii2-dosamigos-asset-bundle" />
+      <path value="$PROJECT_DIR$/_protected/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/_protected/vendor/kartik-v/yii2-widget-rating" />
+      <path value="$PROJECT_DIR$/_protected/vendor/thienhungho/yii2-post-management" />
+      <path value="$PROJECT_DIR$/_protected/vendor/kartik-v/yii2-widget-rangeinput" />
+      <path value="$PROJECT_DIR$/_protected/vendor/bower-asset/bootstrap" />
+      <path value="$PROJECT_DIR$/_protected/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/_protected/vendor/kartik-v/yii2-widget-typeahead" />
+      <path value="$PROJECT_DIR$/_protected/vendor/tubalmartin/cssmin" />
+      <path value="$PROJECT_DIR$/_protected/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/_protected/vendor/kartik-v/yii2-field-range" />
+      <path value="$PROJECT_DIR$/_protected/vendor/kartik-v/yii2-widget-timepicker" />
+      <path value="$PROJECT_DIR$/_protected/vendor/bower-asset/flag-icon-css" />
+      <path value="$PROJECT_DIR$/_protected/vendor/lajax/yii2-translate-manager" />
+      <path value="$PROJECT_DIR$/_protected/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/_protected/vendor/thienhungho/yii2-active-query" />
+      <path value="$PROJECT_DIR$/_protected/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/_protected/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/_protected/vendor/marqu3s/yii2-summernote" />
+      <path value="$PROJECT_DIR$/_protected/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/_protected/vendor/thienhungho/yii2-app-core" />
+      <path value="$PROJECT_DIR$/_protected/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/_protected/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/_protected/vendor/thienhungho/yii2-block-management" />
+      <path value="$PROJECT_DIR$/_protected/vendor/thienhungho/yii2-warehouse-management" />
+      <path value="$PROJECT_DIR$/_protected/vendor/thienhungho/yii2-subscribe-management" />
+      <path value="$PROJECT_DIR$/_protected/vendor/imagine/imagine" />
+      <path value="$PROJECT_DIR$/_protected/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/_protected/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/_protected/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/_protected/vendor/kartik-v/yii2-dynagrid" />
+      <path value="$PROJECT_DIR$/_protected/vendor/trntv/yii2-aceeditor" />
+      <path value="$PROJECT_DIR$/_protected/vendor/kartik-v/yii2-dialog" />
+      <path value="$PROJECT_DIR$/_protected/vendor/mootensai/yii2-jsblock" />
+      <path value="$PROJECT_DIR$/_protected/vendor/kartik-v/bootstrap-fileinput" />
+      <path value="$PROJECT_DIR$/_protected/vendor/mootensai/yii2-optimistic-lock-validator" />
+      <path value="$PROJECT_DIR$/_protected/vendor/kartik-v/yii2-slider" />
+      <path value="$PROJECT_DIR$/_protected/vendor/codeception/base" />
+      <path value="$PROJECT_DIR$/_protected/vendor/behat/gherkin" />
+      <path value="$PROJECT_DIR$/_protected/vendor/kartik-v/yii2-builder" />
+      <path value="$PROJECT_DIR$/_protected/vendor/mootensai/yii2-relation-trait" />
+      <path value="$PROJECT_DIR$/_protected/vendor/bower-asset/ace-builds" />
+      <path value="$PROJECT_DIR$/_protected/vendor/thienhungho/yii2-favorites" />
+      <path value="$PROJECT_DIR$/_protected/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/_protected/vendor/2amigos/yii2-grid-view-library" />
+      <path value="$PROJECT_DIR$/_protected/vendor/kartik-v/yii2-krajee-base" />
+      <path value="$PROJECT_DIR$/_protected/vendor/pimple/pimple" />
+      <path value="$PROJECT_DIR$/_protected/vendor/mootensai/yii2-uuid-behavior" />
+      <path value="$PROJECT_DIR$/_protected/vendor/powerkernel/yii2-flag-icon-css" />
+      <path value="$PROJECT_DIR$/_protected/vendor/kartik-v/yii2-widget-activeform" />
+      <path value="$PROJECT_DIR$/_protected/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/_protected/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/_protected/vendor/thienhungho/yii2-cart" />
+      <path value="$PROJECT_DIR$/_protected/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/_protected/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/_protected/vendor/sebastian/resource-operations" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="yii2-cms-application" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yii2-cms-application" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="25246078-01a6-45a4-817e-8e838a472eab" name="Default Changelist" comment="" />
+      <created>1555154251282</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1555154251282</updated>
+      <workItem from="1555154252482" duration="1100000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1100000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.29638556" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/_protected/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_protected/backend/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_protected/backend/views/layouts/component/page-sidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="25" column="56" selection-start-line="25" selection-start-column="56" selection-end-line="25" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_protected/common/config/view.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/basic/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-996" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_protected/frontend/config/theme.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_protected/frontend/config/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

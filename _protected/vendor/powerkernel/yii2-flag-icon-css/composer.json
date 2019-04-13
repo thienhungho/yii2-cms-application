@@ -1,0 +1,22 @@
+{
+    "name": "powerkernel/yii2-flag-icon-css",
+    "description": "flag-icon-css extension for Yii2",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension"," flag-icon-css"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Harry Tang",
+            "email": "harry@powerkernel.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*",
+		"bower-asset/flag-icon-css": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "powerkernel\\flagiconcss\\": ""
+        }
+    }
+}

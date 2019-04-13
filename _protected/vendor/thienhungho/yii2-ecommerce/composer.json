@@ -1,0 +1,26 @@
+{
+    "name": "thienhungho/yii2-ecommerce",
+    "description": "Yii2 Ecommerce",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","ecommerce"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "thienhungho",
+            "email": "thienhungho@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "yiisoft/yii2": "~2.0.9",
+        "thienhungho/yii2-app-core": "*",
+        "thienhungho/yii2-subscribe-management": "*",
+        "thienhungho/yii2-favorites": "*",
+        "thienhungho/yii2-contact-management": "*",
+        "thienhungho/yii2-term-management": "*",
+        "thienhungho/yii2-comment-management": "*",
+        "thienhungho/yii2-product-management": "*",
+        "thienhungho/yii2-order-management": "*",
+        "thienhungho/yii2-cart": "*"
+    }
+}
