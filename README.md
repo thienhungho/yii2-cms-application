@@ -1,6 +1,6 @@
-Yii2 app advanced for Shared Hosting
+Yii2 CMS APPLICATION
 ====================
-Yii2 app advanced for Shared Hosting
+Yii2 CMS APPLICATION
 
 Installation
 ------------
