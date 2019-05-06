@@ -2,5 +2,11 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/_protected/vendor/kartik-v/yii2-datecontrol" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/_protected/vendor/kartik-v/yii2-grid" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/_protected/vendor/kartik-v/yii2-mpdf" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/_protected/vendor/kartik-v/yii2-tree-manager" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/_protected/vendor/marqu3s/yii2-summernote" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/_protected/vendor/mootensai/yii2-enhanced-gii" vcs="Git" />
   </component>
 </project>

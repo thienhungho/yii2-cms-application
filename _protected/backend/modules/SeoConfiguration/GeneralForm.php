@@ -25,7 +25,7 @@ class GeneralForm extends Model
     public function rules()
     {
         return [
-            [['index_status'],'required'],
+            [['index_status'], 'required'],
             [['index_status'], 'string'],
         ];
     }
@@ -71,11 +71,11 @@ User-agent: *
 Allow: /
 TEXT;
         } elseif ($indexStatus == self::INDEX_STATUS_DISALLOW_ALL) {
-               $content = <<<TEXT
+            $content = <<<TEXT
 User-agent: *
 Disallow: /
 TEXT;
-    }
+        }
         file_put_contents(Yii::getAlias('@backend') . '/../../robots.txt', $content);
     }
 

@@ -19,15 +19,15 @@ $config = yii\helpers\ArrayHelper::merge(
     require '_modules.php'
 );
 
-$config['components']['view']['theme'] = [
-    'basePath' => '@app/themes/cinagro',
-    'baseUrl' => '@app/themes/cinagro',
-    'pathMap' => [
-        '@frontend/views' => '@themes/cinagro/views',
-        '@frontend/modules' => '@themes/cinagro/modules',
-        '@frontend/widgets' => '@themes/cinagro/widgets',
-    ],
-];
+//$config['components']['view']['theme'] = [
+//    'basePath' => '@app/themes/cinagro',
+//    'baseUrl' => '@app/themes/cinagro',
+//    'pathMap' => [
+//        '@frontend/views' => '@themes/cinagro/views',
+//        '@frontend/modules' => '@themes/cinagro/modules',
+//        '@frontend/widgets' => '@themes/cinagro/widgets',
+//    ],
+//];
 
 require __DIR__ . '/_protected/common/components/const.php';
 require __DIR__ . '/_protected/common/components/functions.php';

@@ -22,20 +22,20 @@ class LanguageController extends Controller
             $model->other_languages = \request()->post('otherLanguages');
             if ($model->config()) {
                 set_flash('success_change_language_configuration', $array = [
-                    'type'     => 'success',
+                    'type' => 'success',
                     'duration' => 3000,
-                    'icon'     => 'glyphicon glyphicon-ok-sign',
-                    'title'    => \Yii::t('app', 'Congratulations!'),
-                    'message'  => \Yii::t('app','Your setups has been saved'),
+                    'icon' => 'glyphicon glyphicon-ok-sign',
+                    'title' => \Yii::t('app', 'Congratulations!'),
+                    'message' => \Yii::t('app', 'Your setups has been saved'),
                 ]);
                 return $this->redirect(Url::to(['index']));
             } else {
                 set_flash('error_change_language_configuration', $array = [
-                    'type'     => 'danger',
+                    'type' => 'danger',
                     'duration' => 3000,
-                    'icon'     => 'glyphicon glyphicon-remove-sign',
-                    'title'    => \Yii::t('app', 'An error has occurred!'),
-                    'message'  => \Yii::t('app','Your setups has not been saved'),
+                    'icon' => 'glyphicon glyphicon-remove-sign',
+                    'title' => \Yii::t('app', 'An error has occurred!'),
+                    'message' => \Yii::t('app', 'Your setups has not been saved'),
                 ]);
                 return $this->render('index', ['model' => $model]);
             }

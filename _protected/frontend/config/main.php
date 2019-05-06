@@ -7,7 +7,7 @@ $params = array_merge(
 );
 $modules = require __DIR__ . '/modules.php';
 $rules = require __DIR__ . '/rules.php';
-//$theme = require __DIR__ . '/theme.php';
+$theme = require __DIR__ . '/theme.php';
 return [
     'id' => 'app-frontend',
     'basePath' => dirname(__DIR__),
@@ -40,9 +40,9 @@ return [
         'urlManager' => [
             'rules' => $rules,
         ],
-//        'view' => [
+        'view' => [
 //            'theme' => $theme,
-//        ],
+        ],
     ],
     'params' => $params,
 ];

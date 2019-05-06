@@ -2,7 +2,7 @@
 
 namespace thienhungho\MediaManagement\modules\uploads;
 
-use thienhungho\MediaManagement\modules\MediaBase\Media;
+use thienhungho\MediaManagement\models\Media;
 use Imagine\Image\Box;
 use yii\helpers\FileHelper;
 use yii\imagine\Image;
@@ -48,7 +48,7 @@ class Uploads extends \yii\base\Module
         if (!empty($data['quality'])) {
             $quality = $data['quality'];
         } else {
-            $quality = self::getQualitySetting(50);
+            $quality = Media::getConfigurationQuality(50);
         }
         $file = UploadedFile::getInstanceByName($form_name);
         if ($file) {
@@ -93,38 +93,28 @@ class Uploads extends \yii\base\Module
             }
             FileHelper::createDirectory($thumbnailDir . '/' . date('Y/m/d'));
             $thumbnail_save = $thumbnailDir . '/' . $fileName;
-            $thumbnail_size_width = $settings->get('media_configuration', 'thumbnail_size_width', 150);
-            $thumbnail_size_height = $settings->get('media_configuration', 'thumbnail_size_height', 150);
+            $thumbnail_size_width = Media::getConfigurationThumbnailSizeWidth();
+            $thumbnail_size_height = Media::getConfigurationThumbnailSizeHeight();
             Image::getImagine()->open($fileName_save)->thumbnail(new Box($thumbnail_size_width, $thumbnail_size_height))->save($thumbnail_save , ['quality' => $quality]);
             if (empty($mediumDir)) {
                 $mediumDir = \Yii::getAlias('@medium');
             }
             FileHelper::createDirectory($mediumDir. '/' . date('Y/m/d'));
             $medium_save = $mediumDir . '/' . $fileName;
-            $medium_size_width = $settings->get('media_configuration', 'medium_size_width', 300);
-            $medium_size_height = $settings->get('media_configuration', 'medium_size_height', 300);
+            $medium_size_width = Media::getConfigurationMediumSizeWidth();
+            $medium_size_height = Media::getConfigurationMediumSizeHeight();
             Image::getImagine()->open($fileName_save)->thumbnail(new Box($medium_size_width, $medium_size_height))->save($medium_save , ['quality' => $quality]);
             if (empty($largeDir)) {
                 $largeDir = \Yii::getAlias('@large');
             }
             FileHelper::createDirectory($largeDir . '/' . date('Y/m/d'));
             $large_save = $largeDir  . '/' . $fileName;
-            $large_size_width = $settings->get('media_configuration', 'large_size_width', 1024);
-            $large_size_height = $settings->get('media_configuration', 'large_size_height', 1024);
+            $large_size_width = Media::getConfigurationLargeSizeWidth();
+            $large_size_height = Media::getConfigurationLargeSizeHeight();
             Image::getImagine()->open($fileName_save)->thumbnail(new Box($large_size_width, $large_size_height))->save($large_save , ['quality' => $quality]);
             return $url;
         } else {
             return null;
         }
-    }
-
-    /**
-     * @param $defaultQuality
-     *
-     * @return mixed
-     */
-    public static function getQualitySetting($defaultQuality)
-    {
-        return \Yii::$app->settings->get('media_configuration', 'quality', $defaultQuality);
     }
 }

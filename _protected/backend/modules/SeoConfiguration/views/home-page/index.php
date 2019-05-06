@@ -21,27 +21,27 @@ if (!empty($seo)) {
 <?= $form->field($model, 'title', [
     'addon' => ['prepend' => ['content' => '<span class="fa fa-edit"></span>']],
 ])->textInput([
-    'maxlength'   => true,
+    'maxlength' => true,
     'placeholder' => Yii::t('app', 'Title'),
 ]) ?>
 
 <?= $form->field($model, 'description', [
     'addon' => ['prepend' => ['content' => '<span class="fa fa-edit"></span>']],
 ])->textarea([
-    'maxlength'   => true,
+    'maxlength' => true,
     'placeholder' => Yii::t('app', 'Description'),
 ]) ?>
 
 <?= $form->field($model, 'social_image')->fileInput()
     ->widget(\kartik\file\FileInput::classname(), [
-        'options'       => ['accept' => 'image/*'],
+        'options' => ['accept' => 'image/*'],
         'pluginOptions' => empty($model->social_image) ? [] : [
-            'initialPreview'       => [
+            'initialPreview' => [
                 '/' . $model->social_image,
             ],
             'initialPreviewAsData' => true,
-            'initialCaption'       => $model->social_image,
-            'overwriteInitial'     => true,
+            'initialCaption' => $model->social_image,
+            'overwriteInitial' => true,
         ],
     ]);
 ?>

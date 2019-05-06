@@ -76,6 +76,10 @@ $this->params['breadcrumbs'][] = $this->title;
 
                 <?= \yii\helpers\Html::a(Yii::t('app', 'reset it'), ['site/request-password-reset']) ?>.
 
+                <?= Yii::t('app', 'Or') ?>
+
+                <?= \yii\helpers\Html::a(Yii::t('app', 'Signup'), ['site/signup']) ?>.
+
                 <hr />
 
                 <div class="form-group">

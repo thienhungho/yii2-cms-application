@@ -17,7 +17,7 @@ if (empty($model->index_status)) {
 
 <?php $form = ActiveForm::begin(['id' => 'seo-general-form']); ?>
 
-<?//= $form->field($model, 'index_status', [
+<? //= $form->field($model, 'index_status', [
 //    'addon' => ['prepend' => ['content' => '<span class="fa fa-globe"></span>']],
 //])->widget(\kartik\widgets\Select2::classname(), [
 //    'data' => [\backend\modules\SeoConfiguration\GeneralForm::INDEX_STATUS_ALLOW_ALL => Yii::t('app', 'Allow All'), \backend\modules\SeoConfiguration\GeneralForm::INDEX_STATUS_DISALLOW_ALL => Yii::t('app', 'Disallow All')],

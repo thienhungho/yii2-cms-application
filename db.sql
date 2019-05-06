@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Apr 13, 2019 at 06:45 PM
+-- Generation Time: May 06, 2019 at 03:12 PM
 -- Server version: 5.7.25
 -- PHP Version: 7.1.26
 
@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `yii2-cms-application`
+-- Database: `tsr`
 --
 
 -- --------------------------------------------------------
@@ -39,8 +39,18 @@ CREATE TABLE `auth_assignment` (
 INSERT INTO `auth_assignment` (`item_name`, `user_id`, `created_at`) VALUES
 ('admin', '1', 1527335281),
 ('manager', '4', 1530055800),
+('user', '11', 1556273967),
+('user', '12', 1556274032),
+('user', '13', 1556274074),
+('user', '14', 1556274556),
+('user', '15', 1556439973),
+('user', '16', 1556440445),
 ('user', '3', 1528115964),
-('user', '4', 1531038647);
+('user', '4', 1531038647),
+('user', '6', 1556270844),
+('user', '7', 1556271085),
+('user', '8', 1556271781),
+('user', '9', 1556271853);
 
 -- --------------------------------------------------------
 
@@ -888,21 +898,6 @@ CREATE TABLE `auth_rule` (
   `created_at` int(11) DEFAULT NULL,
   `updated_at` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `billing_type`
---
-
-CREATE TABLE `billing_type` (
-  `id` int(19) NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
-  `created_by` int(19) DEFAULT NULL,
-  `updated_by` int(19) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -2869,49 +2864,20 @@ CREATE TABLE `media` (
 
 INSERT INTO `media` (`id`, `name`, `path`, `title`, `caption`, `alt`, `description`, `file_size`, `dimensions`, `type`, `status`, `created_at`, `updated_at`, `created_by`, `updated_by`) VALUES
 (10, '1221505.png', 'uploads/2018/07/05/120230-1221505.png', NULL, NULL, NULL, NULL, 16337, '200x200', 'image/png', 'public', '2018-07-05 05:02:30', '2018-07-05 05:02:30', 1, NULL),
-(55, '2018/10/25/051802-nho-den-my-2.jpg', 'uploads/2018/10/25/051802-nho-den-my-2.jpg', NULL, NULL, NULL, NULL, 385403, '1600x900', 'image/jpeg', 'public', '2018-10-25 10:18:03', '2018-10-25 10:18:03', 1, NULL),
-(56, '2018/10/25/051846-du-du-1500001278208.jpg', 'uploads/2018/10/25/051846-du-du-1500001278208.jpg', NULL, NULL, NULL, NULL, 140433, '800x533', 'image/jpeg', 'public', '2018-10-25 10:18:47', '2018-10-25 10:18:47', 1, NULL),
-(57, '2018/10/25/051926-mangcut-600x375.jpg', 'uploads/2018/10/25/051926-mangcut-600x375.jpg', NULL, NULL, NULL, NULL, 79406, '600x375', 'image/jpeg', 'public', '2018-10-25 10:19:26', '2018-10-25 10:19:26', 1, NULL),
-(58, '2018/10/25/052012-1_33004.jpg', 'uploads/2018/10/25/052012-1_33004.jpg', NULL, NULL, NULL, NULL, 84097, '700x467', 'image/jpeg', 'public', '2018-10-25 10:20:13', '2018-10-25 10:20:13', 1, NULL),
-(59, '2018/10/25/052227-rambutan-rambutans-rambutan-fruit.jpg', 'uploads/2018/10/25/052227-rambutan-rambutans-rambutan-fruit.jpg', NULL, NULL, NULL, NULL, 273566, '700x522', 'image/jpeg', 'public', '2018-10-25 10:22:27', '2018-10-25 10:22:27', 1, NULL),
-(60, '2018/10/25/052317-cat-tia-cay-nho-2.jpg', 'uploads/2018/10/25/052317-cat-tia-cay-nho-2.jpg', NULL, NULL, NULL, NULL, 100870, '550x600', 'image/jpeg', 'public', '2018-10-25 10:23:17', '2018-10-25 10:23:17', 1, NULL),
-(61, '2018/10/25/052600-photo1532427113348-15324271133491028717479.jpg', 'uploads/2018/10/25/052600-photo1532427113348-15324271133491028717479.jpg', NULL, NULL, NULL, NULL, 113778, '660x410', 'image/jpeg', 'public', '2018-10-25 10:26:00', '2018-10-25 10:26:00', 1, NULL),
-(62, '2018/10/25/052649-Anh bai viet Oi Thanh Ha.jpg', 'uploads/2018/10/25/052649-Anh bai viet Oi Thanh Ha.jpg', NULL, NULL, NULL, NULL, 143582, '1024x661', 'image/jpeg', 'public', '2018-10-25 10:26:50', '2018-10-25 10:26:50', 1, NULL),
-(63, '2018/10/25/052713-ss.jpg', 'uploads/2018/10/25/052713-ss.jpg', NULL, NULL, NULL, NULL, 143582, '1024x661', 'image/jpeg', 'public', '2018-10-25 10:27:13', '2018-10-25 10:27:13', 1, NULL),
-(64, '2018/10/25/052750-quyet-1443480157181.jpg', 'uploads/2018/10/25/052750-quyet-1443480157181.jpg', NULL, NULL, NULL, NULL, 91957, '550x339', 'image/jpeg', 'public', '2018-10-25 10:27:51', '2018-10-25 10:27:51', 1, NULL),
-(65, '2018/10/25/053355-qua-le.jpg', 'uploads/2018/10/25/053355-qua-le.jpg', NULL, NULL, NULL, NULL, 67980, '500x383', 'image/jpeg', 'public', '2018-10-25 10:33:55', '2018-10-25 10:33:55', 1, NULL),
-(66, '2018/10/25/053435-thanh-long-1-0847000.jpg', 'uploads/2018/10/25/053435-thanh-long-1-0847000.jpg', NULL, NULL, NULL, NULL, 177910, '650x418', 'image/jpeg', 'public', '2018-10-25 10:34:35', '2018-10-25 10:34:35', 1, NULL),
-(67, '2018/10/25/053532-mang-cau-tay-ninh.jpg', 'uploads/2018/10/25/053532-mang-cau-tay-ninh.jpg', NULL, NULL, NULL, NULL, 131097, '500x389', 'image/jpeg', 'public', '2018-10-25 10:35:32', '2018-10-25 10:35:32', 1, NULL),
-(68, '2018/10/25/053603-saurieng_VQVJ.jpg', 'uploads/2018/10/25/053603-saurieng_VQVJ.jpg', NULL, NULL, NULL, NULL, 97359, '640x429', 'image/jpeg', 'public', '2018-10-25 10:36:04', '2018-10-25 10:36:04', 1, NULL),
-(69, '2018/10/25/053652-blu1412095117.jpg', 'uploads/2018/10/25/053652-blu1412095117.jpg', NULL, NULL, NULL, NULL, 393700, '1024x800', 'image/jpeg', 'public', '2018-10-25 10:36:52', '2018-10-25 10:36:52', 1, NULL),
-(70, '2018/10/25/074523-tao-tay-45f93.jpg', 'uploads/2018/10/25/074523-tao-tay-45f93.jpg', NULL, NULL, NULL, NULL, 38083, '450x414', 'image/jpeg', 'public', '2018-10-25 12:45:23', '2018-10-25 12:45:23', 1, NULL),
-(71, '2018/10/25/075336-bonbonthai_01_grande.jpg', 'uploads/2018/10/25/075336-bonbonthai_01_grande.jpg', NULL, NULL, NULL, NULL, 39625, '600x400', 'image/jpeg', 'public', '2018-10-25 12:53:36', '2018-10-25 12:53:36', 1, NULL),
-(72, '2018/10/25/075540-mon-ngon-voi-tao-3.jpg', 'uploads/2018/10/25/075540-mon-ngon-voi-tao-3.jpg', NULL, NULL, NULL, NULL, 593207, '1563x1200', 'image/jpeg', 'public', '2018-10-25 12:55:42', '2018-10-25 12:55:42', 1, NULL),
-(73, '2018/10/25/084749-0027142_1_2_master.jpg', 'uploads/2018/10/25/084749-0027142_1_2_master.jpg', NULL, NULL, NULL, NULL, 124560, '700x700', 'image/jpeg', 'public', '2018-10-25 13:47:50', '2018-10-25 13:47:50', 1, NULL),
-(74, '2018/10/25/085358-luu.jpeg', 'uploads/2018/10/25/085358-luu.jpeg', NULL, NULL, NULL, NULL, 31976, '253x199', 'image/jpeg', 'public', '2018-10-25 13:53:59', '2018-10-25 13:53:59', 1, NULL),
-(75, '2018/10/25/085603-xoaituquy.jpg', 'uploads/2018/10/25/085603-xoaituquy.jpg', NULL, NULL, NULL, NULL, 103074, '500x500', 'image/jpeg', 'public', '2018-10-25 13:56:04', '2018-10-25 13:56:04', 1, NULL),
-(76, '2018/10/25/085648-luu.jpeg', 'uploads/2018/10/25/085648-luu.jpeg', NULL, NULL, NULL, NULL, 31976, '253x199', 'image/jpeg', 'public', '2018-10-25 13:56:48', '2018-10-25 13:56:48', 1, NULL),
-(77, '2018/10/25/090948-camsanh.jpeg', 'uploads/2018/10/25/090948-camsanh.jpeg', NULL, NULL, NULL, NULL, 15719, '225x225', 'image/jpeg', 'public', '2018-10-25 14:09:48', '2018-10-25 14:09:48', 1, NULL),
-(78, '2018/10/25/091014-luu.jpeg', 'uploads/2018/10/25/091014-luu.jpeg', NULL, NULL, NULL, NULL, 31976, '253x199', 'image/jpeg', 'public', '2018-10-25 14:10:14', '2018-10-25 14:10:14', 1, NULL),
-(79, '2018/10/25/091033-camsanh.jpeg', 'uploads/2018/10/25/091033-camsanh.jpeg', NULL, NULL, NULL, NULL, 15719, '225x225', 'image/jpeg', 'public', '2018-10-25 14:10:33', '2018-10-25 14:10:33', 1, NULL),
-(80, '2018/10/25/094856-oi-ha-noi.jpeg', 'uploads/2018/10/25/094856-oi-ha-noi.jpeg', NULL, NULL, NULL, NULL, 160227, '640x640', 'image/jpeg', 'public', '2018-10-25 14:48:57', '2018-10-25 14:48:57', 1, NULL),
-(81, '2018/10/25/110801-xoaichuvang.jpeg', 'uploads/2018/10/25/110801-xoaichuvang.jpeg', NULL, NULL, NULL, NULL, 22018, '275x183', 'image/jpeg', 'public', '2018-10-25 16:08:01', '2018-10-25 16:08:01', 1, NULL),
-(82, '2018/10/25/111032-COCCAY.jpg', 'uploads/2018/10/25/111032-COCCAY.jpg', NULL, NULL, NULL, NULL, 158819, '600x600', 'image/jpeg', 'public', '2018-10-25 16:10:32', '2018-10-25 16:10:32', 1, NULL),
-(83, '2018/10/25/111129-tao-viet.jpg', 'uploads/2018/10/25/111129-tao-viet.jpg', NULL, NULL, NULL, NULL, 74314, '700x467', 'image/jpeg', 'public', '2018-10-25 16:11:29', '2018-10-25 16:11:29', 1, NULL),
-(84, '2018/10/25/111240-NHANTHAI.jpg', 'uploads/2018/10/25/111240-NHANTHAI.jpg', NULL, NULL, NULL, NULL, 133757, '1024x600', 'image/jpeg', 'public', '2018-10-25 16:12:40', '2018-10-25 16:12:40', 1, NULL),
-(85, '2018/10/25/111425-mang-cau-tay-ninh.jpg', 'uploads/2018/10/25/111425-mang-cau-tay-ninh.jpg', NULL, NULL, NULL, NULL, 131097, '500x389', 'image/jpeg', 'public', '2018-10-25 16:14:25', '2018-10-25 16:14:25', 1, NULL),
-(86, '2018/10/25/112813-CHOMCHOMNHAN.jpg', 'uploads/2018/10/25/112813-CHOMCHOMNHAN.jpg', NULL, NULL, NULL, NULL, 139846, '500x375', 'image/jpeg', 'public', '2018-10-25 16:28:13', '2018-10-25 16:28:13', 1, NULL),
-(87, '2018/10/25/112850-chomchomthai.jpg', 'uploads/2018/10/25/112850-chomchomthai.jpg', NULL, NULL, NULL, NULL, 257038, '736x552', 'image/jpeg', 'public', '2018-10-25 16:28:50', '2018-10-25 16:28:50', 1, NULL),
-(88, '2018/11/16/040439-1542359079204.png', 'uploads/2018/11/16/040439-1542359079204.png', NULL, NULL, NULL, NULL, 1285105, '675x475', 'image/png', 'public', '2018-11-16 09:04:40', '2018-11-16 09:04:40', 1, NULL),
-(89, '2018/11/16/040440-1542359079480.png', 'uploads/2018/11/16/040440-1542359079480.png', NULL, NULL, NULL, NULL, 1285105, '675x475', 'image/png', 'public', '2018-11-16 09:04:40', '2018-11-16 09:04:40', 1, NULL),
-(90, '2018/11/16/040441-1542359079662.png', 'uploads/2018/11/16/040441-1542359079662.png', NULL, NULL, NULL, NULL, 1285105, '675x475', 'image/png', 'public', '2018-11-16 09:04:41', '2018-11-16 09:04:41', 1, NULL),
-(91, '2018/11/16/041532-cam-my-vang.png', 'uploads/2018/11/16/041532-cam-my-vang.png', NULL, NULL, NULL, NULL, 1502989, '750x500', 'image/png', 'public', '2018-11-16 09:15:32', '2018-11-16 09:15:32', 1, NULL),
-(92, '2018/11/16/041532-cam-my-vang.png', 'uploads/2018/11/16/041532-cam-my-vang.png', NULL, NULL, NULL, NULL, 1502989, '750x500', 'image/png', 'public', '2018-11-16 09:15:33', '2018-11-16 09:15:33', 1, NULL),
-(93, '2018/11/17/054020-1542451220430.png', 'uploads/2018/11/17/054020-1542451220430.png', NULL, NULL, NULL, NULL, 1082250, '600x450', 'image/png', 'public', '2018-11-17 10:40:21', '2018-11-17 10:40:21', 1, NULL),
-(94, '2018/11/17/054256-blog-1.jpg', 'uploads/2018/11/17/054256-blog-1.jpg', NULL, NULL, NULL, NULL, 88777, '600x450', 'image/jpeg', 'public', '2018-11-17 10:42:57', '2018-11-17 10:42:57', 1, NULL),
-(95, '2018/11/17/054343-blog-2.jpg', 'uploads/2018/11/17/054343-blog-2.jpg', NULL, NULL, NULL, NULL, 69980, '600x450', 'image/jpeg', 'public', '2018-11-17 10:43:43', '2018-11-17 10:43:43', 1, NULL),
-(96, '2018/11/17/054413-blog-3.jpg', 'uploads/2018/11/17/054413-blog-3.jpg', NULL, NULL, NULL, NULL, 116531, '600x450', 'image/jpeg', 'public', '2018-11-17 10:44:13', '2018-11-17 10:44:13', 1, NULL),
-(97, '2018/11/17/054451-blog-4.jpg', 'uploads/2018/11/17/054451-blog-4.jpg', NULL, NULL, NULL, NULL, 109125, '600x450', 'image/jpeg', 'public', '2018-11-17 10:44:51', '2018-11-17 10:44:51', 1, NULL);
+(11, '2019/04/30/043225-58384663_2304313009889218_2685424513662844928_o.jpg', 'uploads/2019/04/30/043225-58384663_2304313009889218_2685424513662844928_o.jpg', NULL, NULL, NULL, NULL, 407467, '2048x1364', 'image/jpeg', 'public', '2019-04-30 09:32:26', '2019-04-30 09:32:26', 1, NULL),
+(12, '2019/04/30/043305-58384663_2304313009889218_2685424513662844928_o.jpg', 'uploads/2019/04/30/043305-58384663_2304313009889218_2685424513662844928_o.jpg', NULL, NULL, NULL, NULL, 407467, '2048x1364', 'image/jpeg', 'public', '2019-04-30 09:33:06', '2019-04-30 09:33:06', 1, NULL),
+(13, '2019/04/30/043550-58384663_2304313009889218_2685424513662844928_o.jpg', 'uploads/2019/04/30/043550-58384663_2304313009889218_2685424513662844928_o.jpg', NULL, NULL, NULL, NULL, 407467, '2048x1364', 'image/jpeg', 'public', '2019-04-30 09:35:51', '2019-04-30 09:35:51', 1, NULL),
+(14, '2019/04/30/043644-58384663_2304313009889218_2685424513662844928_o.jpg', 'uploads/2019/04/30/043644-58384663_2304313009889218_2685424513662844928_o.jpg', NULL, NULL, NULL, NULL, 407467, '2048x1364', 'image/jpeg', 'public', '2019-04-30 09:36:45', '2019-04-30 09:36:45', 1, NULL),
+(15, '2019/04/30/043654-58384663_2304313009889218_2685424513662844928_o.jpg', 'uploads/2019/04/30/043654-58384663_2304313009889218_2685424513662844928_o.jpg', NULL, NULL, NULL, NULL, 407467, '2048x1364', 'image/jpeg', 'public', '2019-04-30 09:36:56', '2019-04-30 09:36:56', 1, NULL),
+(16, '2019/04/30/043713-58384663_2304313009889218_2685424513662844928_o.jpg', 'uploads/2019/04/30/043713-58384663_2304313009889218_2685424513662844928_o.jpg', NULL, NULL, NULL, NULL, 407467, '2048x1364', 'image/jpeg', 'public', '2019-04-30 09:37:14', '2019-04-30 09:37:14', 1, NULL),
+(17, '2019/04/30/043912-58384663_2304313009889218_2685424513662844928_o.jpg', 'uploads/2019/04/30/043912-58384663_2304313009889218_2685424513662844928_o.jpg', NULL, NULL, NULL, NULL, 407467, '2048x1364', 'image/jpeg', 'public', '2019-04-30 09:39:13', '2019-04-30 09:39:13', 1, NULL),
+(18, '2019/04/30/043940-58384663_2304313009889218_2685424513662844928_o.jpg', 'uploads/2019/04/30/043940-58384663_2304313009889218_2685424513662844928_o.jpg', NULL, NULL, NULL, NULL, 407467, '2048x1364', 'image/jpeg', 'public', '2019-04-30 09:39:42', '2019-04-30 09:39:42', 1, NULL),
+(19, '2019/04/30/043957-58384663_2304313009889218_2685424513662844928_o.jpg', 'uploads/2019/04/30/043957-58384663_2304313009889218_2685424513662844928_o.jpg', NULL, NULL, NULL, NULL, 407467, '2048x1364', 'image/jpeg', 'public', '2019-04-30 09:39:59', '2019-04-30 09:39:59', 1, NULL),
+(20, '2019/04/30/044040-58384663_2304313009889218_2685424513662844928_o.jpg', 'uploads/2019/04/30/044040-58384663_2304313009889218_2685424513662844928_o.jpg', NULL, NULL, NULL, NULL, 407467, '2048x1364', 'image/jpeg', 'public', '2019-04-30 09:40:42', '2019-04-30 09:40:42', 1, NULL),
+(21, '2019/04/30/044215-273.jpg', 'uploads/2019/04/30/044215-273.jpg', NULL, NULL, NULL, NULL, 407467, '2048x1364', 'image/jpeg', 'public', '2019-04-30 09:42:16', '2019-04-30 09:42:16', 1, NULL),
+(22, '2019/04/30/044309-273.jpg', 'uploads/2019/04/30/044309-273.jpg', NULL, NULL, NULL, NULL, 407467, '2048x1364', 'image/jpeg', 'public', '2019-04-30 09:43:11', '2019-04-30 09:43:11', 1, NULL),
+(23, '2019/04/30/044322-273.jpg', 'uploads/2019/04/30/044322-273.jpg', NULL, NULL, NULL, NULL, 407467, '2048x1364', 'image/jpeg', 'public', '2019-04-30 09:43:24', '2019-04-30 09:43:24', 1, NULL),
+(24, '2019/04/30/044741-273.jpg', 'uploads/2019/04/30/044741-273.jpg', NULL, NULL, NULL, NULL, 407467, '2048x1364', 'image/jpeg', 'public', '2019-04-30 09:47:42', '2019-04-30 09:47:42', 1, NULL);
 
 -- --------------------------------------------------------
 
@@ -3035,20 +3001,10 @@ CREATE TABLE `post` (
   `language` varchar(255) DEFAULT NULL,
   `assign_with` int(19) DEFAULT NULL,
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `created_by` int(19) DEFAULT NULL,
   `updated_by` int(19) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `post`
---
-
-INSERT INTO `post` (`id`, `title`, `slug`, `content`, `author`, `feature_img`, `status`, `comment_status`, `post_parent`, `post_type`, `language`, `assign_with`, `created_at`, `updated_at`, `created_by`, `updated_by`) VALUES
-(1, 'Kết hợp các loại trái cây này sẽ cực giàu chất chống oxy hóa', 'ket-hop-cac-loai-trai-cay-nay-se-cuc-giau-chat-chong-oxy-hoa-ai-muon-khoe-dep-tu-trong-ra-ngoai-thi-nen-uong-ngay', '<p>C&oacute; ai lại kh&ocirc;ng th&iacute;ch một ly nước tr&aacute;i c&acirc;y m&aacute;t mẻ? Ch&uacute;ng ta vẫn thường thưởng thức ch&uacute;ng để l&agrave;m dịu cơn kh&aacute;t, đem lại sự sảng kho&aacute;i v&agrave; cấp nước cho cơ thể hiệu quả trong những ng&agrave;y nắng n&oacute;ng, đồng thời cung cấp nhiều vitamin, kho&aacute;ng chất cần thiết cho cơ thể. Nhưng c&oacute; một thực tế m&agrave; bạn n&ecirc;n biết l&agrave; nước &eacute;p tr&aacute;i c&acirc;y chứa rất nhiều chất chống oxy h&oacute;a, cực c&oacute; lợi cho cơ thể của bạn v&agrave; bảo vệ cơ thể tốt nhất chống lại c&aacute;c gốc tự do g&acirc;y ra nhiều bệnh kh&aacute;c nhau.</p><div type=\"Photo\"><a data-fancybox-group=\"img-lightbox\" href=\"https://kenh14cdn.com/2018/9/28/photo-1-1538108834689879038243.jpg\" target=\"_blank\" title=\"\"><img src=\"/uploads/2018/11/17/054020-1542451220430.png\" alt=\"Kết hợp các loại trái cây này sẽ cực giàu chất chống oxy hóa: Ai muốn khỏe đẹp từ trong ra ngoài thì nên uống ngay - Ảnh 1.\" title=\"Kết hợp các loại trái cây này sẽ cực giàu chất chống oxy hóa: Ai muốn khỏe đẹp từ trong ra ngoài thì nên uống ngay - Ảnh 1.\" rel=\"lightbox\" type=\"photo\" width=\"\" height=\"\" class=\"fr-fic fr-dii\"></a></div><p>Chất chống oxy h&oacute;a l&agrave; những chất bảo vệ c&aacute;c tế b&agrave;o của cơ thể khỏi sự hư hại gốc tự do xảy ra do tiếp x&uacute;c với h&oacute;a chất, h&uacute;t thuốc v&agrave; &ocirc; nhiễm&hellip; Chất chống oxy h&oacute;a cũng l&agrave;m giảm nguy cơ nhiễm tr&ugrave;ng v&agrave; ung thư v&agrave; cũng tốt cho sức khỏe tim mạch của bạn. C&aacute;c chất chống oxy h&oacute;a phổ biến nhất được t&igrave;m thấy trong c&aacute;c loại tr&aacute;i c&acirc;y l&agrave; lycopene, anthocyanin, flavonol, vitamin C, vitamin E, vitamin A, resveratrol v&agrave; tannin.</p><p>V&igrave; vậy, để c&oacute; được một loạt c&aacute;c chất chống oxy h&oacute;a từ chế độ ăn uống, bạn c&oacute; thể thử kết hợp c&aacute;c loại tr&aacute;i c&acirc;y kh&aacute;c nhau trong khi l&agrave;m nước &eacute;p hoặc ăn nhiều loại quả c&ugrave;ng l&uacute;c. Một số bộ đ&ocirc;i tr&aacute;i c&acirc;y kết hợp đem lại khả năng chống oxy h&oacute;a tuyệt vời l&agrave;:</p>', 1, 'uploads/2018/11/17/054256-blog-1.jpg', 'public', 'enable', 0, 'post', 'vi-VN', 0, '2018-11-17 11:03:43', '0000-00-00 00:00:00', NULL, 1),
-(2, '9 loại trái cây Low-carb để giảm cân bạn nên thử ngay', '9-loai-trai-cay-low-carb-de-giam-can-ban-nen-thu-ngay', '<p>C&oacute; ai lại kh&ocirc;ng th&iacute;ch một ly nước tr&aacute;i c&acirc;y m&aacute;t mẻ? Ch&uacute;ng ta vẫn thường thưởng thức ch&uacute;ng để l&agrave;m dịu cơn kh&aacute;t, đem lại sự sảng kho&aacute;i v&agrave; cấp nước cho cơ thể hiệu quả trong những ng&agrave;y nắng n&oacute;ng, đồng thời cung cấp nhiều vitamin, kho&aacute;ng chất cần thiết cho cơ thể. Nhưng c&oacute; một thực tế m&agrave; bạn n&ecirc;n biết l&agrave; nước &eacute;p tr&aacute;i c&acirc;y chứa rất nhiều chất chống oxy h&oacute;a, cực c&oacute; lợi cho cơ thể của bạn v&agrave; bảo vệ cơ thể tốt nhất chống lại c&aacute;c gốc tự do g&acirc;y ra nhiều bệnh kh&aacute;c nhau.</p><div type=\"Photo\"><a data-fancybox-group=\"img-lightbox\" href=\"https://kenh14cdn.com/2018/9/28/photo-1-1538108834689879038243.jpg\" target=\"_blank\" title=\"\"><img src=\"/uploads/2018/11/17/054020-1542451220430.png\" alt=\"Kết hợp các loại trái cây này sẽ cực giàu chất chống oxy hóa: Ai muốn khỏe đẹp từ trong ra ngoài thì nên uống ngay - Ảnh 1.\" title=\"Kết hợp các loại trái cây này sẽ cực giàu chất chống oxy hóa: Ai muốn khỏe đẹp từ trong ra ngoài thì nên uống ngay - Ảnh 1.\" rel=\"lightbox\" type=\"photo\" width=\"\" height=\"\" class=\"fr-fic fr-dii\"></a></div><p>Chất chống oxy h&oacute;a l&agrave; những chất bảo vệ c&aacute;c tế b&agrave;o của cơ thể khỏi sự hư hại gốc tự do xảy ra do tiếp x&uacute;c với h&oacute;a chất, h&uacute;t thuốc v&agrave; &ocirc; nhiễm&hellip; Chất chống oxy h&oacute;a cũng l&agrave;m giảm nguy cơ nhiễm tr&ugrave;ng v&agrave; ung thư v&agrave; cũng tốt cho sức khỏe tim mạch của bạn. C&aacute;c chất chống oxy h&oacute;a phổ biến nhất được t&igrave;m thấy trong c&aacute;c loại tr&aacute;i c&acirc;y l&agrave; lycopene, anthocyanin, flavonol, vitamin C, vitamin E, vitamin A, resveratrol v&agrave; tannin.</p><p>V&igrave; vậy, để c&oacute; được một loạt c&aacute;c chất chống oxy h&oacute;a từ chế độ ăn uống, bạn c&oacute; thể thử kết hợp c&aacute;c loại tr&aacute;i c&acirc;y kh&aacute;c nhau trong khi l&agrave;m nước &eacute;p hoặc ăn nhiều loại quả c&ugrave;ng l&uacute;c. Một số bộ đ&ocirc;i tr&aacute;i c&acirc;y kết hợp đem lại khả năng chống oxy h&oacute;a tuyệt vời l&agrave;:</p>', 1, 'uploads/2018/11/17/054343-blog-2.jpg', 'public', 'enable', 0, 'post', 'vi-VN', 0, '2018-11-17 10:43:43', '0000-00-00 00:00:00', NULL, 1),
-(3, 'Các loại trái cây cực giàu chất xơ, ăn vào chỉ có xuống cân vèo vèo', 'cac-loai-trai-cay-cuc-giau-chat-xo-an-vao-chi-co-xuong-can-veo-veo', '<p>C&oacute; ai lại kh&ocirc;ng th&iacute;ch một ly nước tr&aacute;i c&acirc;y m&aacute;t mẻ? Ch&uacute;ng ta vẫn thường thưởng thức ch&uacute;ng để l&agrave;m dịu cơn kh&aacute;t, đem lại sự sảng kho&aacute;i v&agrave; cấp nước cho cơ thể hiệu quả trong những ng&agrave;y nắng n&oacute;ng, đồng thời cung cấp nhiều vitamin, kho&aacute;ng chất cần thiết cho cơ thể. Nhưng c&oacute; một thực tế m&agrave; bạn n&ecirc;n biết l&agrave; nước &eacute;p tr&aacute;i c&acirc;y chứa rất nhiều chất chống oxy h&oacute;a, cực c&oacute; lợi cho cơ thể của bạn v&agrave; bảo vệ cơ thể tốt nhất chống lại c&aacute;c gốc tự do g&acirc;y ra nhiều bệnh kh&aacute;c nhau.</p><div type=\"Photo\"><a data-fancybox-group=\"img-lightbox\" href=\"https://kenh14cdn.com/2018/9/28/photo-1-1538108834689879038243.jpg\" target=\"_blank\" title=\"\"><img src=\"/uploads/2018/11/17/054020-1542451220430.png\" alt=\"Kết hợp các loại trái cây này sẽ cực giàu chất chống oxy hóa: Ai muốn khỏe đẹp từ trong ra ngoài thì nên uống ngay - Ảnh 1.\" title=\"Kết hợp các loại trái cây này sẽ cực giàu chất chống oxy hóa: Ai muốn khỏe đẹp từ trong ra ngoài thì nên uống ngay - Ảnh 1.\" rel=\"lightbox\" type=\"photo\" width=\"\" height=\"\" class=\"fr-fic fr-dii\"></a></div><p>Chất chống oxy h&oacute;a l&agrave; những chất bảo vệ c&aacute;c tế b&agrave;o của cơ thể khỏi sự hư hại gốc tự do xảy ra do tiếp x&uacute;c với h&oacute;a chất, h&uacute;t thuốc v&agrave; &ocirc; nhiễm&hellip; Chất chống oxy h&oacute;a cũng l&agrave;m giảm nguy cơ nhiễm tr&ugrave;ng v&agrave; ung thư v&agrave; cũng tốt cho sức khỏe tim mạch của bạn. C&aacute;c chất chống oxy h&oacute;a phổ biến nhất được t&igrave;m thấy trong c&aacute;c loại tr&aacute;i c&acirc;y l&agrave; lycopene, anthocyanin, flavonol, vitamin C, vitamin E, vitamin A, resveratrol v&agrave; tannin.</p><p>V&igrave; vậy, để c&oacute; được một loạt c&aacute;c chất chống oxy h&oacute;a từ chế độ ăn uống, bạn c&oacute; thể thử kết hợp c&aacute;c loại tr&aacute;i c&acirc;y kh&aacute;c nhau trong khi l&agrave;m nước &eacute;p hoặc ăn nhiều loại quả c&ugrave;ng l&uacute;c. Một số bộ đ&ocirc;i tr&aacute;i c&acirc;y kết hợp đem lại khả năng chống oxy h&oacute;a tuyệt vời l&agrave;:</p>', 1, 'uploads/2018/11/17/054413-blog-3.jpg', 'public', 'enable', 0, 'post', 'vi-VN', 0, '2018-11-17 10:44:13', '0000-00-00 00:00:00', NULL, 1),
-(4, 'Táo là loại trái cây \"vàng\" cho sức khỏe nhưng 100% chúng ta đều mắc sai lầm này khi ăn', 'tao-la-loai-trai-cay-vang-cho-suc-khoe-nhung-100-chung-ta-deu-mac-sai-lam-nay-khi-an', '<p>C&oacute; ai lại kh&ocirc;ng th&iacute;ch một ly nước tr&aacute;i c&acirc;y m&aacute;t mẻ? Ch&uacute;ng ta vẫn thường thưởng thức ch&uacute;ng để l&agrave;m dịu cơn kh&aacute;t, đem lại sự sảng kho&aacute;i v&agrave; cấp nước cho cơ thể hiệu quả trong những ng&agrave;y nắng n&oacute;ng, đồng thời cung cấp nhiều vitamin, kho&aacute;ng chất cần thiết cho cơ thể. Nhưng c&oacute; một thực tế m&agrave; bạn n&ecirc;n biết l&agrave; nước &eacute;p tr&aacute;i c&acirc;y chứa rất nhiều chất chống oxy h&oacute;a, cực c&oacute; lợi cho cơ thể của bạn v&agrave; bảo vệ cơ thể tốt nhất chống lại c&aacute;c gốc tự do g&acirc;y ra nhiều bệnh kh&aacute;c nhau.</p><div type=\"Photo\"><a data-fancybox-group=\"img-lightbox\" href=\"https://kenh14cdn.com/2018/9/28/photo-1-1538108834689879038243.jpg\" target=\"_blank\" title=\"\"><img src=\"/uploads/2018/11/17/054020-1542451220430.png\" alt=\"Kết hợp các loại trái cây này sẽ cực giàu chất chống oxy hóa: Ai muốn khỏe đẹp từ trong ra ngoài thì nên uống ngay - Ảnh 1.\" title=\"Kết hợp các loại trái cây này sẽ cực giàu chất chống oxy hóa: Ai muốn khỏe đẹp từ trong ra ngoài thì nên uống ngay - Ảnh 1.\" rel=\"lightbox\" type=\"photo\" width=\"\" height=\"\" class=\"fr-fic fr-dii\"></a></div><p>Chất chống oxy h&oacute;a l&agrave; những chất bảo vệ c&aacute;c tế b&agrave;o của cơ thể khỏi sự hư hại gốc tự do xảy ra do tiếp x&uacute;c với h&oacute;a chất, h&uacute;t thuốc v&agrave; &ocirc; nhiễm&hellip; Chất chống oxy h&oacute;a cũng l&agrave;m giảm nguy cơ nhiễm tr&ugrave;ng v&agrave; ung thư v&agrave; cũng tốt cho sức khỏe tim mạch của bạn. C&aacute;c chất chống oxy h&oacute;a phổ biến nhất được t&igrave;m thấy trong c&aacute;c loại tr&aacute;i c&acirc;y l&agrave; lycopene, anthocyanin, flavonol, vitamin C, vitamin E, vitamin A, resveratrol v&agrave; tannin.</p><p>V&igrave; vậy, để c&oacute; được một loạt c&aacute;c chất chống oxy h&oacute;a từ chế độ ăn uống, bạn c&oacute; thể thử kết hợp c&aacute;c loại tr&aacute;i c&acirc;y kh&aacute;c nhau trong khi l&agrave;m nước &eacute;p hoặc ăn nhiều loại quả c&ugrave;ng l&uacute;c. Một số bộ đ&ocirc;i tr&aacute;i c&acirc;y kết hợp đem lại khả năng chống oxy h&oacute;a tuyệt vời l&agrave;:</p>', 1, 'uploads/2018/11/17/054451-blog-4.jpg', 'public', 'enable', 0, 'post', 'vi-VN', 0, '2018-11-17 10:44:51', '0000-00-00 00:00:00', NULL, 1);
 
 -- --------------------------------------------------------
 
@@ -3074,95 +3030,6 @@ INSERT INTO `post_type` (`id`, `name`, `created_at`, `updated_at`, `created_by`,
 (2, 'page', '2018-07-14 11:03:49', '0000-00-00 00:00:00', NULL, NULL),
 (3, 'portfolio', '2018-07-14 11:04:14', '0000-00-00 00:00:00', NULL, NULL),
 (4, 'Recipes', '2018-11-16 09:45:15', '2018-11-16 09:45:15', NULL, NULL);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `product`
---
-
-CREATE TABLE `product` (
-  `id` int(19) NOT NULL,
-  `title` varchar(255) NOT NULL,
-  `slug` varchar(255) NOT NULL,
-  `description` text NOT NULL,
-  `content` text NOT NULL,
-  `author` int(19) DEFAULT NULL,
-  `feature_img` varchar(255) DEFAULT NULL,
-  `sku` varchar(255) DEFAULT NULL,
-  `quantity` float DEFAULT '-1',
-  `status` varchar(255) DEFAULT 'Public',
-  `comment_status` varchar(25) DEFAULT 'Open',
-  `rating_status` varchar(25) DEFAULT 'Open',
-  `promotional_price` float DEFAULT NULL,
-  `price` float DEFAULT NULL,
-  `unit` varchar(255) DEFAULT '1 product',
-  `smallest_unit` float NOT NULL DEFAULT '1',
-  `currency_unit` varchar(255) NOT NULL DEFAULT 'USD',
-  `gallery` text,
-  `product_parent` int(19) DEFAULT NULL,
-  `product_type` varchar(255) DEFAULT NULL,
-  `language` varchar(255) DEFAULT NULL,
-  `assign_with` int(19) DEFAULT NULL,
-  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
-  `created_by` int(19) DEFAULT NULL,
-  `updated_by` int(19) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `product`
---
-
-INSERT INTO `product` (`id`, `title`, `slug`, `description`, `content`, `author`, `feature_img`, `sku`, `quantity`, `status`, `comment_status`, `rating_status`, `promotional_price`, `price`, `unit`, `smallest_unit`, `currency_unit`, `gallery`, `product_parent`, `product_type`, `language`, `assign_with`, `created_at`, `updated_at`, `created_by`, `updated_by`) VALUES
-(1, 'Cam Mỹ Vàng', 'cam-my-vang', 'Xoài dài giống Đài Loan là giống xoài ăn xanh được nhập từ Thái Lan. Vỏ trái có màu xanh đậm và rất dày, trọng lượng trái trung bình 300 – 350gr, khi trái chín  có vị ngọt. Xoài dài giống Đài Loan ăn rất giòn và thơm; do đó bạn có thể dùng ăn liền hoặc chế biến nhiều món ăn khác nhau từ xoài.', '<p><strong>Xo&agrave;i d&agrave;i giống Đ&agrave;i Loan</strong> l&agrave; giống xo&agrave;i ăn xanh được nhập từ Th&aacute;i Lan. Vỏ tr&aacute;i c&oacute; m&agrave;u xanh đậm v&agrave; rất d&agrave;y, trọng lượng tr&aacute;i trung b&igrave;nh 300 &ndash; 350gr, khi tr&aacute;i ch&iacute;n &nbsp;c&oacute; vị ngọt.&nbsp;<strong>Xo&agrave;i d&agrave;i giống Đ&agrave;i Loan</strong> ăn rất gi&ograve;n v&agrave; thơm; do đ&oacute; bạn c&oacute; thể d&ugrave;ng ăn liền hoặc chế biến nhiều m&oacute;n ăn kh&aacute;c nhau từ xo&agrave;i.</p><p>&nbsp;</p><p><img src=\"/uploads/2018/11/16/040441-1542359079662.png\" class=\"fr-fic fr-dii\"></p><p><em>Xo&agrave;i d&agrave;i giống Đ&agrave;i Loan</em></p><p>&nbsp;</p><p><strong>Xo&agrave;i d&agrave;i giống Đ&agrave;i Loan</strong> l&agrave; loại tr&aacute;i c&acirc;y rất gi&agrave;u vitamin A, C v&agrave; D. Với vị ngọt pha ch&uacute;t vị chua đặc trưng, xo&agrave;i keo được nhiều đối tượng người ti&ecirc;u d&ugrave;ng y&ecirc;u th&iacute;ch. Bạn c&oacute; thể chọn <strong>Xo&agrave;i d&agrave;i giống Đ&agrave;i Loan</strong> non, da xanh chưa ngả sang v&agrave;ng để chế biến c&aacute;c m&oacute;n ăn như gỏi xo&agrave;i, xo&agrave;i ng&acirc;m chua&hellip; Nếu người ti&ecirc;u d&ugrave;ng ưa th&iacute;ch ăn <strong>Xo&agrave;i d&agrave;i giống Đ&agrave;i Loan</strong> ch&iacute;n m&agrave; kh&ocirc;ng mua được loại như &yacute; muốn, c&oacute; thể mua xo&agrave;i keo gi&agrave;, bỏ trong t&uacute;i giấy, bảo quản đến khi đạt độ ch&iacute;n t&ugrave;y &yacute; th&iacute;ch đem ra d&ugrave;ng để xay sinh tố hay l&agrave;m ch&egrave;, b&aacute;nh... đều rất thơm ngon.</p><p>&nbsp;</p><hr><p><strong>Gợi &yacute; một số m&oacute;n ăn ngon chế biến từ xo&agrave;i</strong></p><p>Bạn c&oacute; thể sử dụng xo&agrave;i&nbsp;để l&agrave;m m&oacute;n ăn tr&aacute;ng miệng, bổ dưỡng cho cả gia đ&igrave;nh sau những bữa cơm đầm ấm. Ngo&agrave;i ra, xo&agrave;i&nbsp;cũng c&oacute; thể d&ugrave;ng để chế biến những m&oacute;n ăn thơm ngon, tốt cho sức khỏe như:</p><p>&nbsp;</p><p><img src=\"/uploads/2018/11/16/040439-1542359079204.png\" class=\"fr-fic fr-dii\"></p><p><em>Xo&agrave;i dầm</em></p><p>&nbsp;</p><p><img src=\"/uploads/2018/11/16/040440-1542359079480.png\" class=\"fr-fic fr-dii\"></p><p><em>Salad xo&agrave;i</em></p>', 1, 'uploads/2018/11/16/041532-cam-my-vang.png', 'CAMMYVANG01', 1000, 'public', 'enable', 'enable', 50000, 55000, 'Kg', 1, 'VND', '[\"uploads\\/2018\\/11\\/16\\/041532-cam-my-vang.png\"]', 0, 'fruit', 'vi-VN', 0, '2018-11-30 12:55:45', '0000-00-00 00:00:00', 1, 1);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `product_type`
---
-
-CREATE TABLE `product_type` (
-  `id` int(19) NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `slug` varchar(255) NOT NULL,
-  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
-  `created_by` int(19) DEFAULT NULL,
-  `updated_by` int(19) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `product_type`
---
-
-INSERT INTO `product_type` (`id`, `name`, `slug`, `created_at`, `updated_at`, `created_by`, `updated_by`) VALUES
-(1, 'Product', 'product', '2018-10-11 11:19:01', '0000-00-00 00:00:00', 1, 1),
-(2, 'Coin', 'coin', '2018-10-11 11:19:06', '0000-00-00 00:00:00', 1, 1),
-(6, 'Fruit', 'fruit', '2018-11-16 08:16:23', '0000-00-00 00:00:00', 1, 1);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `project`
---
-
-CREATE TABLE `project` (
-  `id` int(19) NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `customer_id` int(19) DEFAULT NULL,
-  `date_start` datetime DEFAULT NULL,
-  `dead_line` datetime DEFAULT NULL,
-  `date_finish` datetime DEFAULT NULL,
-  `billing_type` varchar(255) DEFAULT NULL,
-  `description` text,
-  `status` varchar(255) DEFAULT NULL,
-  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
-  `created_by` int(19) DEFAULT NULL,
-  `updated_by` int(19) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -3216,11 +3083,7 @@ INSERT INTO `seo` (`id`, `title`, `slug`, `description`, `keyword`, `social_imag
 (33, 'Yes', 'yes', '', NULL, 'uploads/default-feature-img.png', 'Yes', '', 'yes', 'yes', 13, 'retina-ready', '2018-07-21 14:40:07', '2018-07-21 14:40:07', 1, 1),
 (34, 'No', 'no', '', NULL, 'uploads/default-feature-img.png', 'No', '', 'yes', 'yes', 14, 'retina-ready', '2018-07-21 14:42:28', '2018-07-21 14:42:28', 1, 1),
 (54, 'Home Page', '/', 'TheCatDev Home Page', NULL, NULL, 'Home Page', 'TheCatDev Home Page', 'yes', 'yes', 0, 'home_page', '2018-07-30 03:38:43', '2018-07-30 03:38:43', 1, 1),
-(57, 'Collection', 'collection', '', NULL, 'uploads/default-feature-img.png', 'Collection', '', 'yes', 'yes', 16, 'category', '2018-08-02 08:22:48', '2018-08-02 08:22:48', 1, 1),
-(59, '9 loại trái cây Low-carb để giảm cân bạn nên thử ngay', '9-loai-trai-cay-low-carb-de-giam-can-ban-nen-thu-ngay', 'C&oacute; ai lại kh&ocirc;ng th&iacute;ch một ly nước tr&aacute;i c&acirc;y m&aacute;t mẻ? Ch&uacute;ng ta vẫn thường thưởng thức ch&uacute;ng để l&agrave;m dịu cơn kh&aacute;t, đem lại sự sảng kho&aacute;i v&agrave; cấp ', NULL, 'uploads/2018/11/17/054343-blog-2.jpg', '9 loại trái cây Low-carb để giảm cân bạn nên thử ngay', 'C&oacute; ai lại kh&ocirc;ng th&iacute;ch một ly nước tr&aacute;i c&acirc;y m&aacute;t mẻ? Ch&uacute;ng ta vẫn thường thưởng thức ch&uacute;ng để l&agrave;m dịu cơn kh&aacute;t, đem lại sự sảng kho&aacute;i v&agrave; cấp ', 'yes', 'yes', 2, 'post', '2018-11-17 10:43:43', '2018-11-17 10:43:43', 1, 1),
-(60, 'Các loại trái cây cực giàu chất xơ, ăn vào chỉ có xuống cân vèo vèo', 'cac-loai-trai-cay-cuc-giau-chat-xo-an-vao-chi-co-xuong-can-veo-veo', 'C&oacute; ai lại kh&ocirc;ng th&iacute;ch một ly nước tr&aacute;i c&acirc;y m&aacute;t mẻ? Ch&uacute;ng ta vẫn thường thưởng thức ch&uacute;ng để l&agrave;m dịu cơn kh&aacute;t, đem lại sự sảng kho&aacute;i v&agrave; cấp ', NULL, 'uploads/2018/11/17/054413-blog-3.jpg', 'Các loại trái cây cực giàu chất xơ, ăn vào chỉ có xuống cân vèo vèo', 'C&oacute; ai lại kh&ocirc;ng th&iacute;ch một ly nước tr&aacute;i c&acirc;y m&aacute;t mẻ? Ch&uacute;ng ta vẫn thường thưởng thức ch&uacute;ng để l&agrave;m dịu cơn kh&aacute;t, đem lại sự sảng kho&aacute;i v&agrave; cấp ', 'yes', 'yes', 3, 'post', '2018-11-17 10:44:13', '2018-11-17 10:44:13', 1, 1),
-(61, 'Táo là loại trái cây \"vàng\" cho sức khỏe nhưng 100% chúng ta đều mắc sai lầm này khi ăn', 'tao-la-loai-trai-cay-vang-cho-suc-khoe-nhung-100-chung-ta-deu-mac-sai-lam-nay-khi-an', 'C&oacute; ai lại kh&ocirc;ng th&iacute;ch một ly nước tr&aacute;i c&acirc;y m&aacute;t mẻ? Ch&uacute;ng ta vẫn thường thưởng thức ch&uacute;ng để l&agrave;m dịu cơn kh&aacute;t, đem lại sự sảng kho&aacute;i v&agrave; cấp ', NULL, 'uploads/2018/11/17/054451-blog-4.jpg', 'Táo là loại trái cây \"vàng\" cho sức khỏe nhưng 100% chúng ta đều mắc sai lầm này khi ăn', 'C&oacute; ai lại kh&ocirc;ng th&iacute;ch một ly nước tr&aacute;i c&acirc;y m&aacute;t mẻ? Ch&uacute;ng ta vẫn thường thưởng thức ch&uacute;ng để l&agrave;m dịu cơn kh&aacute;t, đem lại sự sảng kho&aacute;i v&agrave; cấp ', 'yes', 'yes', 4, 'post', '2018-11-17 10:44:51', '2018-11-17 10:44:51', 1, 1),
-(62, 'Kết hợp các loại trái cây này sẽ cực giàu chất chống oxy hóa', 'ket-hop-cac-loai-trai-cay-nay-se-cuc-giau-chat-chong-oxy-hoa-ai-muon-khoe-dep-tu-trong-ra-ngoai-thi-nen-uong-ngay', 'C&oacute; ai lại kh&ocirc;ng th&iacute;ch một ly nước tr&aacute;i c&acirc;y m&aacute;t mẻ? Ch&uacute;ng ta vẫn thường thưởng thức ch&uacute;ng để l&agrave;m dịu cơn kh&aacute;t, đem lại sự sảng kho&aacute;i v&agrave; cấp ', NULL, 'uploads/2018/11/17/054256-blog-1.jpg', 'Kết hợp các loại trái cây này sẽ cực giàu chất chống oxy hóa', 'C&oacute; ai lại kh&ocirc;ng th&iacute;ch một ly nước tr&aacute;i c&acirc;y m&aacute;t mẻ? Ch&uacute;ng ta vẫn thường thưởng thức ch&uacute;ng để l&agrave;m dịu cơn kh&aacute;t, đem lại sự sảng kho&aacute;i v&agrave; cấp ', 'yes', 'yes', 1, 'post', '2018-11-17 11:03:44', '2018-11-17 11:03:44', 1, 1);
+(57, 'Collection', 'collection', '', NULL, 'uploads/default-feature-img.png', 'Collection', '', 'yes', 'yes', 16, 'category', '2018-08-02 08:22:48', '2018-08-02 08:22:48', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -3246,7 +3109,7 @@ CREATE TABLE `setting` (
 
 INSERT INTO `setting` (`id`, `type`, `section`, `key`, `value`, `status`, `description`, `created_at`, `updated_at`) VALUES
 (2, 'string', 'site_configuration', 'enable_multiple_language', 'off', 1, NULL, 1527766126, 1542447408),
-(3, 'string', 'site_configuration', 'app_description', 'Trái Cây Xanh Tươi', 1, NULL, 1528483340, 1545035968),
+(3, 'string', 'site_configuration', 'app_description', 'NTH', 1, NULL, 1528483340, 1556273607),
 (4, 'string', 'site_configuration', 'app_favicon', 'uploads/favicon.ico', 1, NULL, 1529070620, 1536069426),
 (5, 'string', 'site_configuration', 'mailer_host', 'smtp.yandex.com', 1, NULL, 1529299325, 1536737403),
 (6, 'string', 'site_configuration', 'mailer_username', 'no-reply@thecatdev.com', 1, NULL, 1529299325, 1536737403),
@@ -3256,10 +3119,10 @@ INSERT INTO `setting` (`id`, `type`, `section`, `key`, `value`, `status`, `descr
 (10, 'string', 'site_configuration', 'admin_email', 'admin@thecatdev.com', 1, NULL, 1529315199, 1536737403),
 (11, 'string', 'site_configuration', 'support_email', 'support@thecatdev.com', 1, NULL, 1529315583, 1536737403),
 (12, 'string', 'seo_configuration', 'index_status', 'disallow_all', 1, NULL, 1529626911, 1535186885),
-(13, 'string', 'dev_configuration', 'debug_status', 'true', 1, NULL, 1529691393, 1543689572),
-(14, 'string', 'dev_configuration', 'dev_mode_status', 'true', 1, NULL, 1529691843, 1543689572),
+(13, 'string', 'dev_configuration', 'debug_status', 'true', 1, NULL, 1529691393, 1556442012),
+(14, 'string', 'dev_configuration', 'dev_mode_status', 'true', 1, NULL, 1529691843, 1556442012),
 (15, 'string', 'plugin_configuration', 'e_commerce_status', 'enabled', 1, NULL, 1530235636, 1537356607),
-(16, 'string', 'media_configuration', 'thumbnail_size_width', '150', 1, NULL, 1530584482, 1530584482),
+(16, 'string', 'media_configuration', 'thumbnail_size_width', '150', 1, NULL, 1530584482, 1556521799),
 (17, 'string', 'media_configuration', 'thumbnail_size_height', '150', 1, NULL, 1530584482, 1530585039),
 (18, 'string', 'media_configuration', 'medium_size_width', '300', 1, NULL, 1530584482, 1530584482),
 (19, 'string', 'media_configuration', 'medium_size_height', '300', 1, NULL, 1530584482, 1530584482),
@@ -3294,6 +3157,49 @@ CREATE TABLE `subscribe` (
 
 INSERT INTO `subscribe` (`id`, `email`, `created_at`, `updated_at`, `created_by`, `updated_by`) VALUES
 (1, 'thienhungho@gmail.com', '2018-06-17 18:09:03', '2018-06-17 18:09:03', 1, 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `supplier`
+--
+
+CREATE TABLE `supplier` (
+  `id` int(19) NOT NULL,
+  `user_id` int(19) DEFAULT NULL,
+  `avatar` varchar(255) DEFAULT NULL,
+  `name` varchar(255) NOT NULL,
+  `phone` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `website` varchar(255) DEFAULT NULL,
+  `birth_date` date DEFAULT NULL,
+  `gender` varchar(55) DEFAULT 'male',
+  `relationship_status` varchar(255) DEFAULT 'Single',
+  `vat_number` varchar(255) DEFAULT NULL,
+  `language` varchar(255) DEFAULT 'English',
+  `address` text,
+  `country` varchar(255) DEFAULT NULL,
+  `city` varchar(255) DEFAULT NULL,
+  `state` varchar(255) DEFAULT NULL,
+  `zip_code` varchar(255) DEFAULT NULL,
+  `date_join` date DEFAULT NULL,
+  `date_left` date DEFAULT NULL,
+  `status` varchar(255) DEFAULT 'active',
+  `type` varchar(255) DEFAULT 'Company',
+  `currency` varchar(255) DEFAULT NULL,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `created_by` int(19) DEFAULT NULL,
+  `updated_by` int(19) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `supplier`
+--
+
+INSERT INTO `supplier` (`id`, `user_id`, `avatar`, `name`, `phone`, `email`, `website`, `birth_date`, `gender`, `relationship_status`, `vat_number`, `language`, `address`, `country`, `city`, `state`, `zip_code`, `date_join`, `date_left`, `status`, `type`, `currency`, `created_at`, `updated_at`, `created_by`, `updated_by`) VALUES
+(1, NULL, 'uploads/default-avatar.png', 'Mười Loan', '0906121824', 'muoiloan@gmail.com', '', NULL, 'male', 'married', '', 'vi-VN', '', 'VN', 'Đà Nẵng', 'Hải Châu', '550000', '2018-10-07', NULL, 'active', 'personal', 'VND', '2018-10-22 10:34:15', '2018-10-22 10:34:15', 1, 1),
+(2, NULL, 'uploads/default-avatar.png', 'Búp', '0905221416', 'bup@gmail.com', 'http://traicayxanhtuoi:8888/warehouse', NULL, 'male', 'single', '', 'vi-VN', '', 'VN', 'danang', 'Hải Châu', '550000', '2018-10-25', NULL, 'active', 'enterprise', 'VND', '2018-10-25 10:03:21', '2018-10-25 10:03:21', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -3350,31 +3256,6 @@ CREATE TABLE `term_of_post_type` (
 INSERT INTO `term_of_post_type` (`id`, `name`, `post_type`, `input_type`, `created_at`, `updated_at`, `created_by`, `updated_by`) VALUES
 (1, 'category', 'post', 'text', '2018-07-21 12:42:05', '0000-00-00 00:00:00', NULL, NULL),
 (2, 'tag', 'post', 'text', '2018-07-21 12:42:05', '0000-00-00 00:00:00', NULL, NULL);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `term_of_product_type`
---
-
-CREATE TABLE `term_of_product_type` (
-  `id` int(19) NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `product_type` varchar(255) NOT NULL,
-  `input_type` varchar(255) NOT NULL DEFAULT 'text',
-  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
-  `created_by` int(19) DEFAULT NULL,
-  `updated_by` int(19) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `term_of_product_type`
---
-
-INSERT INTO `term_of_product_type` (`id`, `name`, `product_type`, `input_type`, `created_at`, `updated_at`, `created_by`, `updated_by`) VALUES
-(1, 'color', 'Product', 'text', '2018-10-11 05:50:43', '2018-10-11 05:50:43', NULL, NULL),
-(3, 'size', 'Product', 'text', '2018-10-11 05:50:56', '2018-10-11 05:50:56', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -3456,8 +3337,8 @@ CREATE TABLE `user` (
   `birth_date` date DEFAULT NULL,
   `facebook_url` varchar(255) DEFAULT NULL,
   `status` smallint(6) NOT NULL DEFAULT '10',
-  `created_at` int(11) NOT NULL,
-  `updated_at` int(11) NOT NULL
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -3465,9 +3346,9 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `username`, `auth_key`, `password_hash`, `password_reset_token`, `email`, `full_name`, `job`, `bio`, `company`, `tax_number`, `address`, `avatar`, `phone`, `birth_date`, `facebook_url`, `status`, `created_at`, `updated_at`) VALUES
-(1, 'thienhung', 'lI9d-6MHdoBY8qK64huY8G24EORIK1jJ', '$2y$13$FO7XKkeWTNX4McjBxtL6oOFULoT8CLdOqf/xG2e3/NPNXtV7g9B9q', 'dyl_nVXx68Ij0EueqZ2tOr2T5kiFaOXa_1545733805', 'thienhungho@gmail.com', 'Hồ Thiên Hùng', 'Dev', 'Love Life', 'TheCatDev', '1249203949', 'Danang VietNam', 'uploads/2018/07/05/120230-1221505.png', '0905221416', '1995-05-01', 'http://facebook.com/thienhungho999', 10, 1527344444, 2147483647),
-(4, 'boss', 'LdiAS2RWvrLhN7PIQnLhyBZjvSUE4FCH', '$2y$13$d2uUGIMU0Xe9gfbO.xxc3uJI/yj3LzgaIMdusniJ19/HWsIZo4B4i', NULL, 'boss@gmail.com', 'Boss', 'Counting money', 'Love Dev', '', '', '', 'uploads/default-avatar.png', '', NULL, '', 10, 1528565569, 2147483647),
-(5, 'banhmicoba111tranphu', '6bITh2rHSzx5fxHYgnohOynIew4D9Sg5', '$2y$13$H74ZVfxvKMCNT99FEEJPN.VQPwUnptKQnOVMLU6Fc3QljlwQE.y3S', NULL, 'youremailaddress@example.com', 'Bánh mì cô Ba', '', '', 'Bánh mì cô Ba', '', '111 Trần Phú', 'uploads/default-avatar.png', '+84905875508', NULL, '', 10, 2147483647, 2147483647);
+(1, 'thienhung', 'lI9d-6MHdoBY8qK64huY8G24EORIK1jJ', '$2y$13$M3bMZDy4yj0rML177wwpue5AkDs1EeNNrsMWMBoD/naUvZTmmSN9.', NULL, 'thienhungho@gmail.com', 'Hồ Thiên Hùng', 'Dev', 'Love Life', 'TheCatDev', '1249203949', 'Danang VietNam', 'uploads/2018/07/05/120230-1221505.png', '0905221416', '1995-05-01', 'http://facebook.com/thienhungho999', 10, '2019-04-26 08:38:59', '2019-04-30 09:52:08'),
+(4, 'boss', 'LdiAS2RWvrLhN7PIQnLhyBZjvSUE4FCH', '$2y$13$d2uUGIMU0Xe9gfbO.xxc3uJI/yj3LzgaIMdusniJ19/HWsIZo4B4i', NULL, 'boss@gmail.com', 'Boss', 'Counting money', 'Love Dev', '', '', '', 'uploads/default-avatar.png', '', NULL, '', 10, '2019-04-26 08:38:59', '2019-04-26 08:38:59'),
+(16, 'test2', 'MfcVW8vkql3GAiyB39RsPXubAmn6BKV-', '$2y$13$93iIg.tnqIyldqx58egdUux7BPddBE2CJ5UxKV7B1cUvM6.xZW8du', NULL, 'test2@gmail.com', NULL, NULL, NULL, NULL, NULL, NULL, 'uploads/default-avatar.png', NULL, NULL, NULL, 10, '2019-04-28 08:34:05', '2019-04-28 08:34:05');
 
 -- --------------------------------------------------------
 
@@ -3524,13 +3405,6 @@ ALTER TABLE `auth_migration`
 --
 ALTER TABLE `auth_rule`
   ADD PRIMARY KEY (`name`);
-
---
--- Indexes for table `billing_type`
---
-ALTER TABLE `billing_type`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `name` (`name`);
 
 --
 -- Indexes for table `block`
@@ -3622,33 +3496,6 @@ ALTER TABLE `post_type`
   ADD UNIQUE KEY `name` (`name`);
 
 --
--- Indexes for table `product`
---
-ALTER TABLE `product`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `slug` (`slug`),
-  ADD KEY `fk_prd_author` (`author`),
-  ADD KEY `fk_prod_pt` (`product_type`),
-  ADD KEY `idx_product_status` (`status`),
-  ADD KEY `idx_product_language` (`language`),
-  ADD KEY `idx_product_assign_with` (`assign_with`);
-
---
--- Indexes for table `product_type`
---
-ALTER TABLE `product_type`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `name` (`name`);
-
---
--- Indexes for table `project`
---
-ALTER TABLE `project`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `fk_project_customer` (`customer_id`),
-  ADD KEY `fk_project_bt` (`billing_type`);
-
---
 -- Indexes for table `queue`
 --
 ALTER TABLE `queue`
@@ -3677,6 +3524,15 @@ ALTER TABLE `subscribe`
   ADD UNIQUE KEY `email` (`email`);
 
 --
+-- Indexes for table `supplier`
+--
+ALTER TABLE `supplier`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `name` (`name`),
+  ADD UNIQUE KEY `phone` (`phone`),
+  ADD UNIQUE KEY `email` (`email`);
+
+--
 -- Indexes for table `term`
 --
 ALTER TABLE `term`
@@ -3691,13 +3547,6 @@ ALTER TABLE `term`
 ALTER TABLE `term_of_post_type`
   ADD PRIMARY KEY (`id`),
   ADD KEY `fk_topt_post_type` (`post_type`);
-
---
--- Indexes for table `term_of_product_type`
---
-ALTER TABLE `term_of_product_type`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `fk_topt_pt` (`product_type`);
 
 --
 -- Indexes for table `term_relationships`
@@ -3734,12 +3583,6 @@ ALTER TABLE `user_setting`
 --
 -- AUTO_INCREMENT for dumped tables
 --
-
---
--- AUTO_INCREMENT for table `billing_type`
---
-ALTER TABLE `billing_type`
-  MODIFY `id` int(19) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `block`
@@ -3781,7 +3624,7 @@ ALTER TABLE `mail_transport`
 -- AUTO_INCREMENT for table `media`
 --
 ALTER TABLE `media`
-  MODIFY `id` int(19) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=98;
+  MODIFY `id` int(19) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT for table `meta`
@@ -3793,31 +3636,13 @@ ALTER TABLE `meta`
 -- AUTO_INCREMENT for table `post`
 --
 ALTER TABLE `post`
-  MODIFY `id` int(19) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(19) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `post_type`
 --
 ALTER TABLE `post_type`
   MODIFY `id` int(19) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
-
---
--- AUTO_INCREMENT for table `product`
---
-ALTER TABLE `product`
-  MODIFY `id` int(19) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
--- AUTO_INCREMENT for table `product_type`
---
-ALTER TABLE `product_type`
-  MODIFY `id` int(19) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
---
--- AUTO_INCREMENT for table `project`
---
-ALTER TABLE `project`
-  MODIFY `id` int(19) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `queue`
@@ -3829,7 +3654,7 @@ ALTER TABLE `queue`
 -- AUTO_INCREMENT for table `seo`
 --
 ALTER TABLE `seo`
-  MODIFY `id` int(19) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=63;
+  MODIFY `id` int(19) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
 
 --
 -- AUTO_INCREMENT for table `setting`
@@ -3844,6 +3669,12 @@ ALTER TABLE `subscribe`
   MODIFY `id` int(19) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
+-- AUTO_INCREMENT for table `supplier`
+--
+ALTER TABLE `supplier`
+  MODIFY `id` int(19) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
 -- AUTO_INCREMENT for table `term`
 --
 ALTER TABLE `term`
@@ -3854,12 +3685,6 @@ ALTER TABLE `term`
 --
 ALTER TABLE `term_of_post_type`
   MODIFY `id` int(19) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
---
--- AUTO_INCREMENT for table `term_of_product_type`
---
-ALTER TABLE `term_of_product_type`
-  MODIFY `id` int(19) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `term_relationships`
@@ -3877,7 +3702,7 @@ ALTER TABLE `term_type`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `user_setting`
@@ -3935,20 +3760,6 @@ ALTER TABLE `post`
   ADD CONSTRAINT `fk_p_pt` FOREIGN KEY (`post_type`) REFERENCES `post_type` (`name`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Constraints for table `product`
---
-ALTER TABLE `product`
-  ADD CONSTRAINT `fk_prd_author` FOREIGN KEY (`author`) REFERENCES `user` (`id`) ON DELETE SET NULL ON UPDATE CASCADE,
-  ADD CONSTRAINT `fk_prod_pt` FOREIGN KEY (`product_type`) REFERENCES `product_type` (`name`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Constraints for table `project`
---
-ALTER TABLE `project`
-  ADD CONSTRAINT `fk_project_bt` FOREIGN KEY (`billing_type`) REFERENCES `billing_type` (`name`) ON DELETE SET NULL ON UPDATE CASCADE,
-  ADD CONSTRAINT `fk_project_customer` FOREIGN KEY (`customer_id`) REFERENCES `user` (`id`) ON DELETE SET NULL ON UPDATE CASCADE;
-
---
 -- Constraints for table `term`
 --
 ALTER TABLE `term`
@@ -3960,12 +3771,6 @@ ALTER TABLE `term`
 --
 ALTER TABLE `term_of_post_type`
   ADD CONSTRAINT `fk_topt_post_type` FOREIGN KEY (`post_type`) REFERENCES `post_type` (`name`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Constraints for table `term_of_product_type`
---
-ALTER TABLE `term_of_product_type`
-  ADD CONSTRAINT `fk_topt_pt` FOREIGN KEY (`product_type`) REFERENCES `product_type` (`name`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `term_relationships`

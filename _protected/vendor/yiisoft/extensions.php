@@ -3,33 +3,6 @@
 $vendorDir = dirname(__DIR__);
 
 return array (
-  'yiisoft/yii2-queue' => 
-  array (
-    'name' => 'yiisoft/yii2-queue',
-    'version' => '2.1.0.0',
-    'alias' => 
-    array (
-      '@yii/queue' => $vendorDir . '/yiisoft/yii2-queue/src',
-      '@yii/queue/amqp' => $vendorDir . '/yiisoft/yii2-queue/src/drivers/amqp',
-      '@yii/queue/amqp_interop' => $vendorDir . '/yiisoft/yii2-queue/src/drivers/amqp_interop',
-      '@yii/queue/beanstalk' => $vendorDir . '/yiisoft/yii2-queue/src/drivers/beanstalk',
-      '@yii/queue/db' => $vendorDir . '/yiisoft/yii2-queue/src/drivers/db',
-      '@yii/queue/file' => $vendorDir . '/yiisoft/yii2-queue/src/drivers/file',
-      '@yii/queue/gearman' => $vendorDir . '/yiisoft/yii2-queue/src/drivers/gearman',
-      '@yii/queue/redis' => $vendorDir . '/yiisoft/yii2-queue/src/drivers/redis',
-      '@yii/queue/sync' => $vendorDir . '/yiisoft/yii2-queue/src/drivers/sync',
-      '@yii/queue/sqs' => $vendorDir . '/yiisoft/yii2-queue/src/drivers/sqs',
-    ),
-  ),
-  'yiisoft/yii2-httpclient' => 
-  array (
-    'name' => 'yiisoft/yii2-httpclient',
-    'version' => '2.0.7.0',
-    'alias' => 
-    array (
-      '@yii/httpclient' => $vendorDir . '/yiisoft/yii2-httpclient/src',
-    ),
-  ),
   'kartik-v/yii2-slider' => 
   array (
     'name' => 'kartik-v/yii2-slider',
@@ -127,24 +100,6 @@ return array (
     'alias' => 
     array (
       '@kartik/growl' => $vendorDir . '/kartik-v/yii2-widget-growl',
-    ),
-  ),
-  'kartik-v/yii2-widget-fileinput' => 
-  array (
-    'name' => 'kartik-v/yii2-widget-fileinput',
-    'version' => '1.0.8.0',
-    'alias' => 
-    array (
-      '@kartik/file' => $vendorDir . '/kartik-v/yii2-widget-fileinput/src',
-    ),
-  ),
-  'kartik-v/yii2-widget-depdrop' => 
-  array (
-    'name' => 'kartik-v/yii2-widget-depdrop',
-    'version' => '1.0.5.0',
-    'alias' => 
-    array (
-      '@kartik/depdrop' => $vendorDir . '/kartik-v/yii2-widget-depdrop/src',
     ),
   ),
   'kartik-v/yii2-widget-datetimepicker' => 
@@ -500,16 +455,6 @@ return array (
     ),
     'bootstrap' => 'mootensai\\enhancedgii\\Bootstrap',
   ),
-  'thienhungho/yii2-hrm' => 
-  array (
-    'name' => 'thienhungho/yii2-hrm',
-    'version' => '1.0.0.0',
-  ),
-  'thienhungho/yii2-wms' => 
-  array (
-    'name' => 'thienhungho/yii2-wms',
-    'version' => '1.0.0.0',
-  ),
   'thienhungho/yii2-term-management' => 
   array (
     'name' => 'thienhungho/yii2-term-management',
@@ -628,15 +573,6 @@ return array (
       '@thienhungho/ActiveQuery' => $vendorDir . '/thienhungho/yii2-active-query/src',
     ),
   ),
-  'kartik-v/yii2-tree-manager' => 
-  array (
-    'name' => 'kartik-v/yii2-tree-manager',
-    'version' => '1.1.1.0',
-    'alias' => 
-    array (
-      '@kartik/tree' => $vendorDir . '/kartik-v/yii2-tree-manager/src',
-    ),
-  ),
   'yiisoft/yii2-gii' => 
   array (
     'name' => 'yiisoft/yii2-gii',
@@ -644,15 +580,6 @@ return array (
     'alias' => 
     array (
       '@yii/gii' => $vendorDir . '/yiisoft/yii2-gii/src',
-    ),
-  ),
-  'kartik-v/yii2-krajee-base' => 
-  array (
-    'name' => 'kartik-v/yii2-krajee-base',
-    'version' => '2.0.4.0',
-    'alias' => 
-    array (
-      '@kartik/base' => $vendorDir . '/kartik-v/yii2-krajee-base/src',
     ),
   ),
   'kartik-v/yii2-number' => 
@@ -664,11 +591,6 @@ return array (
       '@kartik/number' => $vendorDir . '/kartik-v/yii2-number/src',
     ),
   ),
-  'thienhungho/yii2-app-core' => 
-  array (
-    'name' => 'thienhungho/yii2-app-core',
-    'version' => '1.0.7.0',
-  ),
   'thienhungho/yii2-widgets' => 
   array (
     'name' => 'thienhungho/yii2-widgets',
@@ -678,51 +600,6 @@ return array (
       '@thienhungho/Widgets' => $vendorDir . '/thienhungho/yii2-widgets/src',
     ),
   ),
-  'thienhungho/yii2-post-management' => 
-  array (
-    'name' => 'thienhungho/yii2-post-management',
-    'version' => '1.0.6.0',
-    'alias' => 
-    array (
-      '@thienhungho/PostManagement' => $vendorDir . '/thienhungho/yii2-post-management/src',
-    ),
-  ),
-  'thienhungho/yii2-employee-management' => 
-  array (
-    'name' => 'thienhungho/yii2-employee-management',
-    'version' => '1.0.6.0',
-    'alias' => 
-    array (
-      '@thienhungho/EmployeeManagement' => $vendorDir . '/thienhungho/yii2-employee-management/src',
-    ),
-  ),
-  'thienhungho/yii2-supplier-management' => 
-  array (
-    'name' => 'thienhungho/yii2-supplier-management',
-    'version' => '1.0.2.0',
-    'alias' => 
-    array (
-      '@thienhungho/SupplierManagement' => $vendorDir . '/thienhungho/yii2-supplier-management/src',
-    ),
-  ),
-  'thienhungho/yii2-warehouse-management' => 
-  array (
-    'name' => 'thienhungho/yii2-warehouse-management',
-    'version' => '1.0.8.0',
-    'alias' => 
-    array (
-      '@thienhungho/WarehouseManagement' => $vendorDir . '/thienhungho/yii2-warehouse-management/src',
-    ),
-  ),
-  'thienhungho/yii2-media-management' => 
-  array (
-    'name' => 'thienhungho/yii2-media-management',
-    'version' => '1.0.6.0',
-    'alias' => 
-    array (
-      '@thienhungho/MediaManagement' => $vendorDir . '/thienhungho/yii2-media-management/src',
-    ),
-  ),
   'thienhungho/yii2-product-management' => 
   array (
     'name' => 'thienhungho/yii2-product-management',
@@ -730,24 +607,6 @@ return array (
     'alias' => 
     array (
       '@thienhungho/ProductManagement' => $vendorDir . '/thienhungho/yii2-product-management/src',
-    ),
-  ),
-  'thienhungho/yii2-user-management' => 
-  array (
-    'name' => 'thienhungho/yii2-user-management',
-    'version' => '1.1.2.0',
-    'alias' => 
-    array (
-      '@thienhungho/UserManagement' => $vendorDir . '/thienhungho/yii2-user-management/src',
-    ),
-  ),
-  'kartik-v/yii2-grid' => 
-  array (
-    'name' => 'kartik-v/yii2-grid',
-    'version' => '3.2.9.0',
-    'alias' => 
-    array (
-      '@kartik/grid' => $vendorDir . '/kartik-v/yii2-grid/src',
     ),
   ),
   'thienhungho/yii2-order-management' => 
@@ -777,20 +636,6 @@ return array (
       '@kartik/export' => $vendorDir . '/kartik-v/yii2-export/src',
     ),
   ),
-  'thienhungho/yii2-template-configuration' => 
-  array (
-    'name' => 'thienhungho/yii2-template-configuration',
-    'version' => '1.0.0.0',
-    'alias' => 
-    array (
-      '@thienhungho/TemplateConfiguration' => $vendorDir . '/thienhungho/yii2-template-configuration/src',
-    ),
-  ),
-  'thienhungho/yii2-configuration' => 
-  array (
-    'name' => 'thienhungho/yii2-configuration',
-    'version' => '1.0.0.0',
-  ),
   'rmrevin/yii2-fontawesome' => 
   array (
     'name' => 'rmrevin/yii2-fontawesome',
@@ -800,37 +645,10 @@ return array (
       '@rmrevin/yii/fontawesome' => $vendorDir . '/rmrevin/yii2-fontawesome',
     ),
   ),
-  'froala/yii2-froala-editor' => 
-  array (
-    'name' => 'froala/yii2-froala-editor',
-    'version' => '2.9.3.0',
-    'alias' => 
-    array (
-      '@froala/froalaeditor' => $vendorDir . '/froala/yii2-froala-editor/src',
-    ),
-  ),
   'thienhungho/yii2-helper-functions' => 
   array (
     'name' => 'thienhungho/yii2-helper-functions',
     'version' => '1.0.7.0',
-  ),
-  'yiisoft/yii2-authclient' => 
-  array (
-    'name' => 'yiisoft/yii2-authclient',
-    'version' => '2.1.8.0',
-    'alias' => 
-    array (
-      '@yii/authclient' => $vendorDir . '/yiisoft/yii2-authclient/src',
-    ),
-  ),
-  'yiisoft/yii2-bootstrap' => 
-  array (
-    'name' => 'yiisoft/yii2-bootstrap',
-    'version' => '2.0.9.0',
-    'alias' => 
-    array (
-      '@yii/bootstrap' => $vendorDir . '/yiisoft/yii2-bootstrap/src',
-    ),
   ),
   'kartik-v/yii2-widget-activeform' => 
   array (
@@ -849,5 +667,168 @@ return array (
     array (
       '@kartik/dynagrid' => $vendorDir . '/kartik-v/yii2-dynagrid/src',
     ),
+  ),
+  'yiisoft/yii2-bootstrap' => 
+  array (
+    'name' => 'yiisoft/yii2-bootstrap',
+    'version' => '2.0.10.0',
+    'alias' => 
+    array (
+      '@yii/bootstrap' => $vendorDir . '/yiisoft/yii2-bootstrap/src',
+    ),
+  ),
+  'froala/yii2-froala-editor' => 
+  array (
+    'name' => 'froala/yii2-froala-editor',
+    'version' => '2.9.5.0',
+    'alias' => 
+    array (
+      '@froala/froalaeditor' => $vendorDir . '/froala/yii2-froala-editor/src',
+    ),
+  ),
+  'yiisoft/yii2-queue' => 
+  array (
+    'name' => 'yiisoft/yii2-queue',
+    'version' => '2.2.0.0',
+    'alias' => 
+    array (
+      '@yii/queue' => $vendorDir . '/yiisoft/yii2-queue/src',
+      '@yii/queue/amqp' => $vendorDir . '/yiisoft/yii2-queue/src/drivers/amqp',
+      '@yii/queue/amqp_interop' => $vendorDir . '/yiisoft/yii2-queue/src/drivers/amqp_interop',
+      '@yii/queue/beanstalk' => $vendorDir . '/yiisoft/yii2-queue/src/drivers/beanstalk',
+      '@yii/queue/db' => $vendorDir . '/yiisoft/yii2-queue/src/drivers/db',
+      '@yii/queue/file' => $vendorDir . '/yiisoft/yii2-queue/src/drivers/file',
+      '@yii/queue/gearman' => $vendorDir . '/yiisoft/yii2-queue/src/drivers/gearman',
+      '@yii/queue/redis' => $vendorDir . '/yiisoft/yii2-queue/src/drivers/redis',
+      '@yii/queue/sync' => $vendorDir . '/yiisoft/yii2-queue/src/drivers/sync',
+      '@yii/queue/sqs' => $vendorDir . '/yiisoft/yii2-queue/src/drivers/sqs',
+    ),
+  ),
+  'yiisoft/yii2-httpclient' => 
+  array (
+    'name' => 'yiisoft/yii2-httpclient',
+    'version' => '2.0.9.0',
+    'alias' => 
+    array (
+      '@yii/httpclient' => $vendorDir . '/yiisoft/yii2-httpclient/src',
+    ),
+  ),
+  'yiisoft/yii2-authclient' => 
+  array (
+    'name' => 'yiisoft/yii2-authclient',
+    'version' => '2.2.1.0',
+    'alias' => 
+    array (
+      '@yii/authclient' => $vendorDir . '/yiisoft/yii2-authclient/src',
+    ),
+  ),
+  'kartik-v/yii2-krajee-base' => 
+  array (
+    'name' => 'kartik-v/yii2-krajee-base',
+    'version' => '2.0.5.0',
+    'alias' => 
+    array (
+      '@kartik/base' => $vendorDir . '/kartik-v/yii2-krajee-base/src',
+    ),
+  ),
+  'kartik-v/yii2-tree-manager' => 
+  array (
+    'name' => 'kartik-v/yii2-tree-manager',
+    'version' => '1.1.2.0',
+    'alias' => 
+    array (
+      '@kartik/tree' => $vendorDir . '/kartik-v/yii2-tree-manager/src',
+    ),
+  ),
+  'kartik-v/yii2-grid' => 
+  array (
+    'name' => 'kartik-v/yii2-grid',
+    'version' => '3.3.0.0',
+    'alias' => 
+    array (
+      '@kartik/grid' => $vendorDir . '/kartik-v/yii2-grid/src',
+    ),
+  ),
+  'thienhungho/yii2-app-core' => 
+  array (
+    'name' => 'thienhungho/yii2-app-core',
+    'version' => '1.1.0.0',
+  ),
+  'kartik-v/yii2-widget-fileinput' => 
+  array (
+    'name' => 'kartik-v/yii2-widget-fileinput',
+    'version' => '1.0.9.0',
+    'alias' => 
+    array (
+      '@kartik/file' => $vendorDir . '/kartik-v/yii2-widget-fileinput/src',
+    ),
+  ),
+  'kartik-v/yii2-widget-depdrop' => 
+  array (
+    'name' => 'kartik-v/yii2-widget-depdrop',
+    'version' => '1.0.6.0',
+    'alias' => 
+    array (
+      '@kartik/depdrop' => $vendorDir . '/kartik-v/yii2-widget-depdrop/src',
+    ),
+  ),
+  'thienhungho/yii2-google-analytics' => 
+  array (
+    'name' => 'thienhungho/yii2-google-analytics',
+    'version' => '1.0.3.0',
+    'alias' => 
+    array (
+      '@thienhungho/GoogleAnalytics' => $vendorDir . '/thienhungho/yii2-google-analytics/src',
+    ),
+  ),
+  'thienhungho/yii2-dev-configuration' => 
+  array (
+    'name' => 'thienhungho/yii2-dev-configuration',
+    'version' => '1.0.1.0',
+    'alias' => 
+    array (
+      '@thienhungho/DevConfiguration' => $vendorDir . '/thienhungho/yii2-dev-configuration/src',
+    ),
+  ),
+  'thienhungho/yii2-post-management' => 
+  array (
+    'name' => 'thienhungho/yii2-post-management',
+    'version' => '1.0.9.0',
+    'alias' => 
+    array (
+      '@thienhungho/PostManagement' => $vendorDir . '/thienhungho/yii2-post-management/src',
+    ),
+  ),
+  'thienhungho/yii2-template-configuration' => 
+  array (
+    'name' => 'thienhungho/yii2-template-configuration',
+    'version' => '1.0.1.0',
+    'alias' => 
+    array (
+      '@thienhungho/TemplateConfiguration' => $vendorDir . '/thienhungho/yii2-template-configuration/src',
+    ),
+  ),
+  'thienhungho/yii2-media-management' => 
+  array (
+    'name' => 'thienhungho/yii2-media-management',
+    'version' => '1.0.8.0',
+    'alias' => 
+    array (
+      '@thienhungho/MediaManagement' => $vendorDir . '/thienhungho/yii2-media-management/src',
+    ),
+  ),
+  'thienhungho/yii2-user-management' => 
+  array (
+    'name' => 'thienhungho/yii2-user-management',
+    'version' => '1.1.9.0',
+    'alias' => 
+    array (
+      '@thienhungho/UserManagement' => $vendorDir . '/thienhungho/yii2-user-management/src',
+    ),
+  ),
+  'thienhungho/yii2-configuration' => 
+  array (
+    'name' => 'thienhungho/yii2-configuration',
+    'version' => '1.0.2.0',
   ),
 );

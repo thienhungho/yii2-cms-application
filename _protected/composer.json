@@ -21,18 +21,16 @@
   "require": {
     "thienhungho/yii2-app-core": "*",
     "thienhungho/yii2-block-management": "*",
-    "thienhungho/yii2-hrm": "*",
     "thienhungho/yii2-contact-management": "*",
     "thienhungho/yii2-favorites": "*",
     "thienhungho/yii2-subscribe-management": "*",
     "thienhungho/yii2-term-management": "*",
     "thienhungho/yii2-comment-management": "*",
     "thienhungho/yii2-cms": "*",
-    "thienhungho/yii2-wms": "*",
     "thienhungho/yii2-theme-1001": "*",
     "thienhungho/yii2-theme-1002": "*",
-    "thienhungho/yii2-ecommerce": "*",
-    "thienhungho/yii2-configuration": "*"
+    "thienhungho/yii2-configuration": "*",
+    "thienhungho/yii2-google-analytics": "*"
   },
   "require-dev": {
     "yiisoft/yii2-debug": "~2.0.0",

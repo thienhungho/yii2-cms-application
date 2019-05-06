@@ -28,13 +28,13 @@ if (empty($model->number_item_per_site_map)) {
 ])->textInput(['type' => 'number']) ?>
 
 <?=
-'<div class="form-group">'.
-'<label class="category-label">'.Yii::t('app', 'Content Type In Site Map').'</label>'.
+'<div class="form-group">' .
+'<label class="category-label">' . Yii::t('app', 'Content Type In Site Map') . '</label>' .
 \kartik\widgets\Select2::widget([
     'addon' => ['prepend' => ['content' => '<span class="fa fa-file-o"></span>']],
     'name' => 'ContentType',
     'value' => $contentType,
-    'data'          => \yii\helpers\ArrayHelper::map(\cmsbase\modules\PostBase\PostType::find()->orderBy('id')->asArray()->all(), 'name', 'name'),
+    'data' => \yii\helpers\ArrayHelper::map(\cmsbase\modules\PostBase\PostType::find()->orderBy('id')->asArray()->all(), 'name', 'name'),
     'options' => ['multiple' => true, 'placeholder' => Yii::t('app', 'Choose Content Type')],
     'pluginOptions' => [
         'allowClear' => true,

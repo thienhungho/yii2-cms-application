@@ -15,12 +15,6 @@ return [
             'class' => 'frontend\modules\posts\PostModule',
         ],
         /**
-         * Product
-         */
-        'product' => [
-            'class' => 'frontend\modules\products\ProductModule',
-        ],
-        /**
          * Comment
          */
         'comment' => [

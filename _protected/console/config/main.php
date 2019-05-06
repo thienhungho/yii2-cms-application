@@ -30,6 +30,16 @@ return [
                 ],
             ],
         ],
+        'db' => [
+            'class' => 'yii\db\Connection',
+            'dsn' => 'mysql:host=localhost:8889;dbname=yii2-cms-appication',
+            'username' => 'root',
+            'password' => 'root',
+            'charset' => 'utf8',
+            'enableSchemaCache' => false,
+            'schemaCacheDuration' => 3600,
+            'schemaCache' => 'cache',
+        ],
     ],
     'params' => $params,
 ];

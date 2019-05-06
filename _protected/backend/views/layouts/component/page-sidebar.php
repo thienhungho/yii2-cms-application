@@ -24,6 +24,7 @@
             </li>
             <?= $this->render('_sidebar_content') ?>
             <?= $this->render('_sidebar_interactive') ?>
+            <?= $this->render('_sidebar_ecommerce') ?>
             <?= $this->render('_sidebar_media') ?>
             <!-- Term -->
             <?= $this->render('_sidebar_term') ?>

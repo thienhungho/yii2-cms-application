@@ -25,7 +25,7 @@ class PluginForm extends Model
     public function rules()
     {
         return [
-            [['e_commerce_status'],'required'],
+            [['e_commerce_status'], 'required'],
             [['e_commerce_status'], 'string'],
         ];
     }

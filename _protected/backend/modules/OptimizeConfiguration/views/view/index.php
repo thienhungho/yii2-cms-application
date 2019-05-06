@@ -46,8 +46,8 @@ $this->params['breadcrumbs'][] = Yii::t('app', 'Optimize');
     'itemOptions' => ['labelOptions' => ['class' => 'btn green']]
 ]); ?>
 
-    <div class="form-group">
-        <?= Html::submitButton(Yii::t('app', 'Save'), ['class' => 'btn green', 'name' => 'save-button']) ?>
-    </div>
+<div class="form-group">
+    <?= Html::submitButton(Yii::t('app', 'Save'), ['class' => 'btn green', 'name' => 'save-button']) ?>
+</div>
 
 <?php ActiveForm::end(); ?>

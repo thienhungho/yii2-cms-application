@@ -1,8 +1,8 @@
 <?php
 namespace common\controllers;
 
-use common\models\PasswordResetRequestForm;
-use common\models\ResetPasswordForm;
+use thienhungho\UserManagement\models\PasswordResetRequestForm;
+use thienhungho\UserManagement\models\ResetPasswordForm;
 use common\modules\subscribes\Subscribe;
 use yii\web\Response;
 use Yii;
@@ -11,8 +11,8 @@ use yii\web\BadRequestHttpException;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
-use common\models\LoginForm;
-use frontend\models\SignupForm;
+use thienhungho\UserManagement\models\LoginForm;
+use thienhungho\UserManagement\models\SignupForm;
 
 /**
  * Site controller
@@ -44,7 +44,7 @@ class SiteController extends Controller
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
-                    'logout' => ['post'],
+//                    'logout' => ['post'],
                     'subscribe' => ['post']
                 ],
             ],

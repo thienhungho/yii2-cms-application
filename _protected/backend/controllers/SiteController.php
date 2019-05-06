@@ -1,10 +1,11 @@
 <?php
 namespace backend\controllers;
 
-use common\models\PasswordResetRequestForm;
-use common\models\ResetPasswordForm;
+use thienhungho\UserManagement\models\PasswordResetRequestForm;
+use thienhungho\UserManagement\models\ResetPasswordForm;
+use thienhungho\UserManagement\models\SignupForm;
+use thienhungho\UserManagement\models\LoginForm;
 use Yii;
-use backend\models\LoginForm;
 use yii\base\InvalidParamException;
 use yii\web\BadRequestHttpException;
 
@@ -50,6 +51,26 @@ class SiteController extends \common\controllers\SiteController
             $model->password = '';
 
             return $this->renderPartial('login', [
+                'model' => $model,
+            ]);
+        }
+    }
+
+    /**
+     * Signs user up.
+     *
+     * @return mixed
+     */
+    public function actionSignup()
+    {
+        $model = new SignupForm();
+        if ($model->load(Yii::$app->request->post())) {
+            if ($user = $model->signup()) {
+                $model = new LoginForm();
+                return $this->redirect(['site/login']);
+            }
+        } else {
+            return $this->renderPartial('signup', [
                 'model' => $model,
             ]);
         }

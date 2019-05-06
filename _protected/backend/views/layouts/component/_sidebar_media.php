@@ -18,7 +18,7 @@ if (is_role(['admin', 'manager'])) {
                     <i class="icon-plus"></i> <span class="title"><?= t('app', 'Create') ?> <?= t('app', 'Image') ?></span> </a>
             </li>
             <li class="nav-item  ">
-                <a href="<?= url(['/site-configuration/media']) ?>" class="nav-link ">
+                <a href="<?= url(['/media-configuration/media']) ?>" class="nav-link ">
                     <i class="icon-settings"></i> <span class="title"><?= t('app', 'Settings') ?></span> </a>
             </li>
         </ul>

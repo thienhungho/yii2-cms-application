@@ -26,8 +26,8 @@ $otherLanguages = require Yii::getAlias('@common') . '/config/other-languages.ph
 ]); ?>
 
 <?=
-'<div class="form-group">'.
-'<label class="category-label">'.Yii::t('app', 'Other languages').'</label>'.
+'<div class="form-group">' .
+'<label class="category-label">' . Yii::t('app', 'Other languages') . '</label>' .
 \kartik\widgets\Select2::widget([
     'addon' => ['prepend' => ['content' => '<span class="fa fa-language"></span>']],
     'name' => 'otherLanguages[]',

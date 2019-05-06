@@ -19,20 +19,8 @@ class MailerForm extends Model
     public function rules()
     {
         return [
-            [
-                [
-                    'adminEmail',
-                    'supportEmail'
-                ],
-                'required',
-            ],
-            [
-                [
-                    'adminEmail',
-                    'supportEmail'
-                ],
-                'string',
-            ],
+            [['adminEmail', 'supportEmail'], 'required'],
+            [['adminEmail', 'supportEmail'], 'string'],
         ];
     }
 

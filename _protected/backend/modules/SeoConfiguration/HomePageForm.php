@@ -23,7 +23,7 @@ class HomePageForm extends Model
     public function rules()
     {
         return [
-            [['title', 'description'],'required'],
+            [['title', 'description'], 'required'],
             [['title', 'description', 'social_image'], 'string', 'max' => 255],
         ];
     }

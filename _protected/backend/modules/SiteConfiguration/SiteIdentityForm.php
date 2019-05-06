@@ -28,20 +28,8 @@ class SiteIdentityForm extends Model
     public function rules()
     {
         return [
-            [
-                [
-                    'app_name',
-                    'app_description',
-                ],
-                'required',
-            ],
-            [
-                [
-                    'app_name',
-                    'app_description',
-                ],
-                'string',
-            ],
+            [['app_name', 'app_description'], 'required'],
+            [['app_name', 'app_description'], 'string'],
             [['favicon'], 'default', 'value' => self::FAVICON_DEFAULT],
             [['app_logo'], 'default', 'value' => self::APP_LOGO_DEFAULT]
         ];
@@ -91,6 +79,7 @@ class SiteIdentityForm extends Model
 return '$app_name';
 PHP;
         file_put_contents(Yii::getAlias('@common') . '/config/name.php', $content);
+        set_setting('site_configuration', 'app_name', $this->app_name);
     }
 
     /**
@@ -105,7 +94,8 @@ PHP;
      * @throws \yii\base\Exception
      * @throws \yii\base\InvalidConfigException
      */
-    private function configAppFavicon() {
+    private function configAppFavicon()
+    {
         $file = upload_img('SiteIdentityForm[favicon]', false);
         if ($file) {
             $this->favicon = $file;
@@ -117,7 +107,8 @@ PHP;
      * @throws \yii\base\Exception
      * @throws \yii\base\InvalidConfigException
      */
-    private function configAppLogo() {
+    private function configAppLogo()
+    {
         $file = upload_img('SiteIdentityForm[app_logo]', false);
         if ($file) {
             $this->app_logo = $file;

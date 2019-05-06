@@ -20,17 +20,8 @@ class LanguageForm extends Model
     public function rules()
     {
         return [
-            [
-                ['primary_language', 'enable_multiple_language'],
-                'required',
-            ],
-            [
-                [
-                    'primary_language',
-                    'enable_multiple_language',
-                ],
-                'string',
-            ],
+            [['primary_language', 'enable_multiple_language'], 'required'],
+            [['primary_language', 'enable_multiple_language'], 'string'],
         ];
     }
 
@@ -40,9 +31,9 @@ class LanguageForm extends Model
     public function attributeLabels()
     {
         return [
-            'primary_language'         => Yii::t('app', 'Primary Language'),
+            'primary_language' => Yii::t('app', 'Primary Language'),
             'enable_multiple_language' => Yii::t('app', 'Enable Multiple Language'),
-            'other_languages'          => Yii::t('app', 'Other languages'),
+            'other_languages' => Yii::t('app', 'Other languages'),
         ];
     }
 

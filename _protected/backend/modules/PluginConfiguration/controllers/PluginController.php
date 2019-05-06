@@ -21,20 +21,20 @@ class PluginController extends Controller
         if ($model->load(\request()->post())) {
             if ($model->config()) {
                 set_flash('success_change_configuration', $array = [
-                    'type'     => 'success',
+                    'type' => 'success',
                     'duration' => 3000,
-                    'icon'     => 'glyphicon glyphicon-ok-sign',
-                    'title'    => \t('app', 'Congratulations!'),
-                    'message'  => \t('app','Your setups has been saved'),
+                    'icon' => 'glyphicon glyphicon-ok-sign',
+                    'title' => \t('app', 'Congratulations!'),
+                    'message' => \t('app', 'Your setups has been saved'),
                 ]);
                 return $this->redirect(Url::to(['index']));
             } else {
                 set_flash('error_change_configuration', $array = [
-                    'type'     => 'danger',
+                    'type' => 'danger',
                     'duration' => 3000,
-                    'icon'     => 'glyphicon glyphicon-remove-sign',
-                    'title'    => \t('app', 'An error has occurred!'),
-                    'message'  => \t('app','Your setups has not been saved'),
+                    'icon' => 'glyphicon glyphicon-remove-sign',
+                    'title' => \t('app', 'An error has occurred!'),
+                    'message' => \t('app', 'Your setups has not been saved'),
                 ]);
                 return $this->render('index', ['model' => $model]);
             }

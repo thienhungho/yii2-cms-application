@@ -3,8 +3,8 @@
 /**
  * @package   yii2-grid
  * @author    Kartik Visweswaran <kartikv2@gmail.com>
- * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014 - 2018
- * @version   3.2.9
+ * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014 - 2019
+ * @version   3.3.0
  */
 
 namespace kartik\grid;
@@ -59,6 +59,16 @@ use yii\widgets\Pjax;
 class GridView extends YiiGridView implements BootstrapInterface
 {
     use BootstrapTrait;
+
+    /**
+     * @var string the top part of the table after the header (used for location of the page summary row)
+     */
+    const POS_TOP = 'top';
+
+    /**
+     * @var string the bottom part of the table before the footer (used for location of the page summary row)
+     */
+    const POS_BOTTOM = 'bottom';
 
     /**
      * @var string the **default** bootstrap contextual color type (applicable only for panel contextual style)
@@ -406,6 +416,12 @@ class GridView extends YiiGridView implements BootstrapInterface
      * This label will replace the plural word `items-many` within the grid summary text.
      */
     public $itemLabelMany;
+
+    /**
+     * @var string the default label shown for each record in the grid (accusative case). This is applicable for few
+     * languages like German.
+     */
+    public $itemLabelAccusative;
 
     /**
      * @var string the template for rendering the grid within a bootstrap styled panel.
@@ -778,6 +794,11 @@ HTML;
     public $showPageSummary = false;
 
     /**
+     * @var string location of the page summary row (whether [[POS_TOP]] or [[POS_BOTTOM]])
+     */
+    public $pageSummaryPosition = self::POS_BOTTOM;
+
+    /**
      * @array the HTML attributes for the page summary container. The following special options are recognized:
      *
      * - `tag`: _string_, the tag used to render the page summary. Defaults to `tbody`.
@@ -983,6 +1004,14 @@ HTML;
     public $containerOptions = [];
 
     /**
+     * Whether to hash export config and prevent data tampering of the export config when transmitting this between
+     * client and server during grid data export. Defaults to `true`. You may set this to `false` if your config
+     * contains dynamic data (like current date time). However, note that when `false` it adds the possibility of
+     * your client data being tampered during grid export when read by server.
+     */
+    public $hashExportConfig = true;
+
+    /**
      * @var string the generated client script for the grid
      */
     protected $_gridClientFunc = '';
@@ -1080,6 +1109,9 @@ HTML;
         }
         if (!isset($this->itemLabelMany)) {
             $this->itemLabelMany = Yii::t('kvgrid', 'items-many');
+        }
+        if (!isset($this->itemLabelAccusative)) {
+            $this->itemLabelAccusative = Yii::t('kvgrid', 'items-acc');
         }
         $isBs4 = $this->isBs4();
         if ($isBs4) {
@@ -1187,7 +1219,8 @@ HTML;
     {
         $content = parent::renderTableBody();
         if ($this->showPageSummary) {
-            return $content . $this->renderPageSummary();
+            $summary = $this->renderPageSummary();
+            return $this->pageSummaryPosition === self::POS_TOP ? ($summary . $content) : ($content . $summary);
         }
         return $content;
     }
@@ -1249,7 +1282,9 @@ HTML;
             if ($format === self::JSON) {
                 unset($config['jsonReplacer']);
             }
-            $dataToHash = $this->moduleId . $setting['filename'] . $mime . $encoding . $bom . Json::encode($config);
+            $cfg = $this->hashExportConfig ? Json::encode($config) : '';
+            $intCfg = empty($this->hashExportConfig) ? 0 : 1;
+            $dataToHash = $this->moduleId . $setting['filename'] . $mime . $encoding . $bom . $intCfg . $cfg;
             $hash = Yii::$app->security->hashData($dataToHash, $this->_module->exportEncryptSalt);
             $items[] = [
                 'label' => $label,
@@ -1258,6 +1293,7 @@ HTML;
                     'class' => 'export-' . $format,
                     'data-mime' => $mime,
                     'data-hash' => $hash,
+                    'data-hash-export-config' => $intCfg,
                     'data-css-styles' => $cssStyles,
                 ],
                 'options' => $setting['options'],
@@ -1373,6 +1409,7 @@ HTML;
             'items' => $this->itemLabelPlural,
             'items-few' => $this->itemLabelFew,
             'items-many' => $this->itemLabelMany,
+            'items-acc' => $this->itemLabelAccusative,
         ];
         $pagination = $this->dataProvider->getPagination();
         if ($pagination !== false) {

@@ -15,6 +15,7 @@ class ViewForm extends Model
     public $minify_html;
     public $concatenate_css;
     public $concatenate_js;
+
     /**
      * {@inheritdoc}
      */

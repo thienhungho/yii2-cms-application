@@ -34,7 +34,7 @@ if (is_role(['admin', 'manager'])) {
                     <i class="icon-pie-chart"></i> <span class="title"><?= t('app', 'Dashboard') ?></span> </a>
             </li>
             <li class="nav-item  ">
-                <a href="<?= url(['/site-configuration/google-analytics']) ?>" class="nav-link ">
+                <a href="<?= url(['/google-analytics-configuration/google-analytics']) ?>" class="nav-link ">
                     <i class="icon-settings"></i> <span class="title"><?= t('app', 'Settings') ?></span> </a>
             </li>
         </ul>

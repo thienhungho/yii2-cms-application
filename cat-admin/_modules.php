@@ -24,7 +24,13 @@ return [
          * Dev Configuration
          */
         'dev-configuration' => [
-            'class' => 'backend\modules\DevConfiguration\DevConfiguration',
+            'class' => 'thienhungho\DevConfiguration\modules\DevConfiguration\DevConfiguration',
+        ],
+        /**
+         * Google Analytics Configuration
+         */
+        'google-analytics-configuration' => [
+            'class' => 'thienhungho\GoogleAnalytics\modules\Configuration\ConfigurationModules',
         ],
         /**
          * Plugin Configuration
@@ -64,24 +70,6 @@ return [
             'class' => 'thienhungho\PostManagement\modules\PostManage\PostManage',
         ],
         /**
-         * Product Manage
-         */
-        'product-manage' => [
-            'class' => 'thienhungho\ProductManagement\modules\ProductManage\ProductManage',
-        ],
-        /**
-         * Order Manage
-         */
-        'order-manage' => [
-            'class' => 'thienhungho\OrderManagement\modules\OrderManage\OrderManage',
-        ],
-        /**
-         * My order
-         */
-        'my-order' => [
-            'class' => 'thienhungho\OrderManagement\modules\MyOrder\MyOrder',
-        ],
-        /**
          * Comment Manage
          */
         'comment-manage' => [
@@ -110,6 +98,12 @@ return [
          */
         'media-manage' => [
             'class' => 'thienhungho\MediaManagement\modules\MediaManage\MediaManage',
+        ],
+        /**
+         * Media Configuration
+         */
+        'media-configuration' => [
+            'class' => 'thienhungho\MediaManagement\modules\MediaConfiguration\MediaConfiguration',
         ],
         /**
          * Mail Transport Manage
