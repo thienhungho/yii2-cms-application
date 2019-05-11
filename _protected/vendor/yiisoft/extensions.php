@@ -174,16 +174,6 @@ return array (
       '@kartik/field' => $vendorDir . '/kartik-v/yii2-field-range/src',
     ),
   ),
-  'himiklab/yii2-recaptcha-widget' => 
-  array (
-    'name' => 'himiklab/yii2-recaptcha-widget',
-    'version' => '1.2.2.0',
-    'alias' => 
-    array (
-      '@himiklab/yii2/recaptcha' => $vendorDir . '/himiklab/yii2-recaptcha-widget/src',
-      '@himiklab/yii2/recaptcha/tests' => $vendorDir . '/himiklab/yii2-recaptcha-widget/tests',
-    ),
-  ),
   'trntv/yii2-aceeditor' => 
   array (
     'name' => 'trntv/yii2-aceeditor',
@@ -704,15 +694,6 @@ return array (
       '@yii/queue/sqs' => $vendorDir . '/yiisoft/yii2-queue/src/drivers/sqs',
     ),
   ),
-  'yiisoft/yii2-httpclient' => 
-  array (
-    'name' => 'yiisoft/yii2-httpclient',
-    'version' => '2.0.9.0',
-    'alias' => 
-    array (
-      '@yii/httpclient' => $vendorDir . '/yiisoft/yii2-httpclient/src',
-    ),
-  ),
   'yiisoft/yii2-authclient' => 
   array (
     'name' => 'yiisoft/yii2-authclient',
@@ -817,18 +798,37 @@ return array (
       '@thienhungho/MediaManagement' => $vendorDir . '/thienhungho/yii2-media-management/src',
     ),
   ),
-  'thienhungho/yii2-user-management' => 
-  array (
-    'name' => 'thienhungho/yii2-user-management',
-    'version' => '1.1.9.0',
-    'alias' => 
-    array (
-      '@thienhungho/UserManagement' => $vendorDir . '/thienhungho/yii2-user-management/src',
-    ),
-  ),
   'thienhungho/yii2-configuration' => 
   array (
     'name' => 'thienhungho/yii2-configuration',
     'version' => '1.0.2.0',
+  ),
+  'yiisoft/yii2-httpclient' => 
+  array (
+    'name' => 'yiisoft/yii2-httpclient',
+    'version' => '2.0.10.0',
+    'alias' => 
+    array (
+      '@yii/httpclient' => $vendorDir . '/yiisoft/yii2-httpclient/src',
+    ),
+  ),
+  'himiklab/yii2-recaptcha-widget' => 
+  array (
+    'name' => 'himiklab/yii2-recaptcha-widget',
+    'version' => '2.0.0.0',
+    'alias' => 
+    array (
+      '@himiklab/yii2/recaptcha' => $vendorDir . '/himiklab/yii2-recaptcha-widget/src',
+      '@himiklab/yii2/recaptcha/tests' => $vendorDir . '/himiklab/yii2-recaptcha-widget/tests',
+    ),
+  ),
+  'thienhungho/yii2-user-management' => 
+  array (
+    'name' => 'thienhungho/yii2-user-management',
+    'version' => '1.2.0.0',
+    'alias' => 
+    array (
+      '@thienhungho/UserManagement' => $vendorDir . '/thienhungho/yii2-user-management/src',
+    ),
   ),
 );

@@ -334,7 +334,7 @@
         "version_normalized": "3.3.1.0",
         "source": {
             "type": "git",
-            "url": "git@github.com:jquery/jquery-dist.git",
+            "url": "https://github.com/jquery/jquery-dist.git",
             "reference": "9e8ec3d10fad04748176144f108d7355662ae75e"
         },
         "dist": {
@@ -1386,17 +1386,17 @@
     },
     {
         "name": "himiklab/yii2-recaptcha-widget",
-        "version": "1.2.2",
-        "version_normalized": "1.2.2.0",
+        "version": "2.0.0",
+        "version_normalized": "2.0.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/himiklab/yii2-recaptcha-widget.git",
-            "reference": "30045aa93e6dd398ff4d0b919c0796984569b54d"
+            "reference": "be37ddccb2f67962944213504933725083bd6314"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/himiklab/yii2-recaptcha-widget/zipball/30045aa93e6dd398ff4d0b919c0796984569b54d",
-            "reference": "30045aa93e6dd398ff4d0b919c0796984569b54d",
+            "url": "https://api.github.com/repos/himiklab/yii2-recaptcha-widget/zipball/be37ddccb2f67962944213504933725083bd6314",
+            "reference": "be37ddccb2f67962944213504933725083bd6314",
             "shasum": ""
         },
         "require": {
@@ -1406,7 +1406,7 @@
         "require-dev": {
             "phpunit/phpunit": "^4.8.34"
         },
-        "time": "2018-11-08T09:49:58+00:00",
+        "time": "2019-04-15T07:18:47+00:00",
         "type": "yii2-extension",
         "installation-source": "dist",
         "autoload": {
@@ -1425,7 +1425,7 @@
                 "homepage": "https://github.com/himiklab/"
             }
         ],
-        "description": "Yii2 Google reCAPTCHA widget",
+        "description": "Yii2 Google reCAPTCHA v2 and v3 widget",
         "keywords": [
             "captcha",
             "google",
@@ -4808,17 +4808,17 @@
     },
     {
         "name": "phpdocumentor/reflection-docblock",
-        "version": "4.3.0",
-        "version_normalized": "4.3.0.0",
+        "version": "4.3.1",
+        "version_normalized": "4.3.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-            "reference": "94fd0001232e47129dd3504189fa1c7225010d08"
+            "reference": "bdd9f737ebc2a01c06ea7ff4308ec6697db9b53c"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/94fd0001232e47129dd3504189fa1c7225010d08",
-            "reference": "94fd0001232e47129dd3504189fa1c7225010d08",
+            "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/bdd9f737ebc2a01c06ea7ff4308ec6697db9b53c",
+            "reference": "bdd9f737ebc2a01c06ea7ff4308ec6697db9b53c",
             "shasum": ""
         },
         "require": {
@@ -4832,7 +4832,7 @@
             "mockery/mockery": "^1.0",
             "phpunit/phpunit": "^6.4"
         },
-        "time": "2017-11-30T07:14:17+00:00",
+        "time": "2019-04-30T17:48:53+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -5373,17 +5373,17 @@
     },
     {
         "name": "phpunit/phpunit",
-        "version": "7.5.9",
-        "version_normalized": "7.5.9.0",
+        "version": "7.5.10",
+        "version_normalized": "7.5.10.0",
         "source": {
             "type": "git",
             "url": "https://github.com/sebastianbergmann/phpunit.git",
-            "reference": "134669cf0eeac3f79bc7f0c793efbc158bffc160"
+            "reference": "d7d9cee051d03ed98df6023aad93f7902731a780"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/134669cf0eeac3f79bc7f0c793efbc158bffc160",
-            "reference": "134669cf0eeac3f79bc7f0c793efbc158bffc160",
+            "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/d7d9cee051d03ed98df6023aad93f7902731a780",
+            "reference": "d7d9cee051d03ed98df6023aad93f7902731a780",
             "shasum": ""
         },
         "require": {
@@ -5422,7 +5422,7 @@
             "ext-xdebug": "*",
             "phpunit/php-invoker": "^2.0"
         },
-        "time": "2019-04-19T15:50:46+00:00",
+        "time": "2019-05-09T05:06:47+00:00",
         "bin": [
             "phpunit"
         ],
@@ -6075,17 +6075,17 @@
     },
     {
         "name": "sebastian/environment",
-        "version": "4.2.1",
-        "version_normalized": "4.2.1.0",
+        "version": "4.2.2",
+        "version_normalized": "4.2.2.0",
         "source": {
             "type": "git",
             "url": "https://github.com/sebastianbergmann/environment.git",
-            "reference": "3095910f0f0fb155ac4021fc51a4a7a39ac04e8a"
+            "reference": "f2a2c8e1c97c11ace607a7a667d73d47c19fe404"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/sebastianbergmann/environment/zipball/3095910f0f0fb155ac4021fc51a4a7a39ac04e8a",
-            "reference": "3095910f0f0fb155ac4021fc51a4a7a39ac04e8a",
+            "url": "https://api.github.com/repos/sebastianbergmann/environment/zipball/f2a2c8e1c97c11ace607a7a667d73d47c19fe404",
+            "reference": "f2a2c8e1c97c11ace607a7a667d73d47c19fe404",
             "shasum": ""
         },
         "require": {
@@ -6097,7 +6097,7 @@
         "suggest": {
             "ext-posix": "*"
         },
-        "time": "2019-04-25T07:55:20+00:00",
+        "time": "2019-05-05T09:05:15+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -6607,8 +6607,8 @@
     },
     {
         "name": "symfony/browser-kit",
-        "version": "v4.2.7",
-        "version_normalized": "4.2.7.0",
+        "version": "v4.2.8",
+        "version_normalized": "4.2.8.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/browser-kit.git",
@@ -6666,8 +6666,8 @@
     },
     {
         "name": "symfony/console",
-        "version": "v4.2.7",
-        "version_normalized": "4.2.7.0",
+        "version": "v4.2.8",
+        "version_normalized": "4.2.8.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/console.git",
@@ -6740,17 +6740,17 @@
     },
     {
         "name": "symfony/contracts",
-        "version": "v1.0.2",
-        "version_normalized": "1.0.2.0",
+        "version": "v1.1.0",
+        "version_normalized": "1.1.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/contracts.git",
-            "reference": "1aa7ab2429c3d594dd70689604b5cf7421254cdf"
+            "reference": "d3636025e8253c6144358ec0a62773cae588395b"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/contracts/zipball/1aa7ab2429c3d594dd70689604b5cf7421254cdf",
-            "reference": "1aa7ab2429c3d594dd70689604b5cf7421254cdf",
+            "url": "https://api.github.com/repos/symfony/contracts/zipball/d3636025e8253c6144358ec0a62773cae588395b",
+            "reference": "d3636025e8253c6144358ec0a62773cae588395b",
             "shasum": ""
         },
         "require": {
@@ -6758,20 +6758,23 @@
         },
         "require-dev": {
             "psr/cache": "^1.0",
-            "psr/container": "^1.0"
+            "psr/container": "^1.0",
+            "symfony/polyfill-intl-idn": "^1.10"
         },
         "suggest": {
             "psr/cache": "When using the Cache contracts",
             "psr/container": "When using the Service contracts",
             "symfony/cache-contracts-implementation": "",
+            "symfony/event-dispatcher-implementation": "",
+            "symfony/http-client-contracts-implementation": "",
             "symfony/service-contracts-implementation": "",
             "symfony/translation-contracts-implementation": ""
         },
-        "time": "2018-12-05T08:06:11+00:00",
+        "time": "2019-04-27T14:29:50+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "1.0-dev"
+                "dev-master": "1.1-dev"
             }
         },
         "installation-source": "dist",
@@ -6810,8 +6813,8 @@
     },
     {
         "name": "symfony/css-selector",
-        "version": "v4.2.7",
-        "version_normalized": "4.2.7.0",
+        "version": "v4.2.8",
+        "version_normalized": "4.2.8.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/css-selector.git",
@@ -6865,8 +6868,8 @@
     },
     {
         "name": "symfony/dom-crawler",
-        "version": "v4.2.7",
-        "version_normalized": "4.2.7.0",
+        "version": "v4.2.8",
+        "version_normalized": "4.2.8.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/dom-crawler.git",
@@ -6924,8 +6927,8 @@
     },
     {
         "name": "symfony/event-dispatcher",
-        "version": "v4.2.7",
-        "version_normalized": "4.2.7.0",
+        "version": "v4.2.8",
+        "version_normalized": "4.2.8.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/event-dispatcher.git",
@@ -6990,8 +6993,8 @@
     },
     {
         "name": "symfony/finder",
-        "version": "v4.2.7",
-        "version_normalized": "4.2.7.0",
+        "version": "v4.2.8",
+        "version_normalized": "4.2.8.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/finder.git",
@@ -7344,8 +7347,8 @@
     },
     {
         "name": "symfony/process",
-        "version": "v4.2.7",
-        "version_normalized": "4.2.7.0",
+        "version": "v4.2.8",
+        "version_normalized": "4.2.8.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/process.git",
@@ -7395,8 +7398,8 @@
     },
     {
         "name": "symfony/yaml",
-        "version": "v4.2.7",
-        "version_normalized": "4.2.7.0",
+        "version": "v4.2.8",
+        "version_normalized": "4.2.8.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/yaml.git",
@@ -8672,24 +8675,24 @@
     },
     {
         "name": "thienhungho/yii2-user-management",
-        "version": "v1.1.9",
-        "version_normalized": "1.1.9.0",
+        "version": "v1.2.0",
+        "version_normalized": "1.2.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/thienhungho/yii2-user-management.git",
-            "reference": "5294e1bce6c72101c7aedc59af5832b524ddd85e"
+            "reference": "19dd990582bb94114ae7700a7984f929b91430e3"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/thienhungho/yii2-user-management/zipball/5294e1bce6c72101c7aedc59af5832b524ddd85e",
-            "reference": "5294e1bce6c72101c7aedc59af5832b524ddd85e",
+            "url": "https://api.github.com/repos/thienhungho/yii2-user-management/zipball/19dd990582bb94114ae7700a7984f929b91430e3",
+            "reference": "19dd990582bb94114ae7700a7984f929b91430e3",
             "shasum": ""
         },
         "require": {
             "thienhungho/yii2-app-core": "*",
             "yiisoft/yii2": "~2.0.9"
         },
-        "time": "2019-04-30T09:54:33+00:00",
+        "time": "2019-05-09T09:36:45+00:00",
         "type": "yii2-extension",
         "installation-source": "dist",
         "autoload": {
@@ -9652,17 +9655,17 @@
     },
     {
         "name": "yiisoft/yii2-httpclient",
-        "version": "2.0.9",
-        "version_normalized": "2.0.9.0",
+        "version": "2.0.10",
+        "version_normalized": "2.0.10.0",
         "source": {
             "type": "git",
             "url": "https://github.com/yiisoft/yii2-httpclient.git",
-            "reference": "d788e6783c76ef043a5bff1f2b47d82cf44bbe8c"
+            "reference": "d3d780d37bc8aa092e9ae555ed38645464587a07"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/yiisoft/yii2-httpclient/zipball/d788e6783c76ef043a5bff1f2b47d82cf44bbe8c",
-            "reference": "d788e6783c76ef043a5bff1f2b47d82cf44bbe8c",
+            "url": "https://api.github.com/repos/yiisoft/yii2-httpclient/zipball/d3d780d37bc8aa092e9ae555ed38645464587a07",
+            "reference": "d3d780d37bc8aa092e9ae555ed38645464587a07",
             "shasum": ""
         },
         "require": {
@@ -9671,7 +9674,7 @@
         "require-dev": {
             "phpunit/phpunit": "4.8.27|~5.7.21|^6.2"
         },
-        "time": "2019-04-23T11:06:27+00:00",
+        "time": "2019-04-30T14:57:35+00:00",
         "type": "yii2-extension",
         "extra": {
             "branch-alias": {
